@@ -1,0 +1,13 @@
+.header {
+    padding: 4px;
+    text-align: left;
+    background: linear-gradient(to right,  #234168, #4a6d9b);
+    height: 80px;
+    width: 100%;
+}
+img{
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    border: 1px solid azure;
+}

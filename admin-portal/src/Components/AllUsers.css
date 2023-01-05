@@ -1,0 +1,23 @@
+.user-head{
+    text-align: justify;
+    font-weight: bold;
+    background-color: #628ec7;
+    height: 40px;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.nav-link div:hover{
+    background-color: #d0def1;
+}
+h5{
+    margin-left: 10px;
+}

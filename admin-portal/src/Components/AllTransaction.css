@@ -1,0 +1,25 @@
+.transaction-container-thead{
+    font-size: 18px;
+    margin: 10px;
+    
+}
+.transaction-container-thead div div {
+    text-align: justify;
+    font-weight: bold;
+    background-color: #628ec7;
+    height: 40px;
+    border: 1px solid black;
+}
+.transaction-container{
+    margin: 10px;
+}
+.transaction-container div div{
+    background-color: #bfd6f8;
+    border: 0.5px solid rgb(223, 223, 195);
+}
+.containert{
+    position: absolute;
+    left: 45px;
+    right: 45px;
+    top: 85px
+}

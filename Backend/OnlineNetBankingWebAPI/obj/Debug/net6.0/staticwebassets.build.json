@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ItSltFD4Kvnpi+Hsr09XYUXT9uF2VCDm8B131wH1Rpg=",
+  "Source": "OnlineNetBankingWebAPI",
+  "BasePath": "_content/OnlineNetBankingWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

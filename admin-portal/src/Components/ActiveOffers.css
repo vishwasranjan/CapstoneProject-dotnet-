@@ -1,0 +1,8 @@
+.active-offers-head-container{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #628ec7;
+}

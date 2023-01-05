@@ -1,0 +1,208 @@
+
+<!-- <section 
+style="background-image:url('https://wallpaperaccess.com/full/3713461.jpg')">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+        <div class="card-body p-5" style="border-radius: 15px;">
+  
+          <h3>Register a New User<i class="fa fa-user-circle" style="color: #243d5e;" aria-hidden="true"></i></h3>
+            <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit(registerForm.value)">
+  
+              
+  
+              <div class="form-outline mb-4">
+                  <input type="text" class="form-control" value="" required id="firstName" formControlName="firstName" placeholder="First Name" >
+                  <div>
+                    <div *ngIf="registerForm.controls['firstName'].invalid && registerForm.controls['firstName'].dirty" class="text-danger">
+                      <div *ngIf="registerForm.controls['firstName'].errors?.['required']">
+                        Firstname is required
+                      </div>
+                      <div *ngIf="registerForm.controls['firstName'].errors?.['minlength']">
+                        Please enter atleast 5 letters for Firstname
+                      </div>
+                      <div *ngIf="registerForm.controls['firstName'].errors?.['maxlength']">
+                        Please enter atmost 20 letters for Firstname
+                      </div>
+                    </div>
+                  </div>
+  
+              </div>
+  
+              <div class="form-outline mb-4">
+                  <input type="text" class="form-control" value="" required id="middlename" formControlName="middlename" placeholder="Middle Name">
+  
+                  <div>
+                    <div *ngIf="registerForm.controls['middleName'].invalid && registerForm.controls['middleName'].dirty" class="text-danger">
+                      <div *ngIf="registerForm.controls['middleName'].errors?.['required']">
+                        Middlename is required
+                      </div>
+                      <div *ngIf="registerForm.controls['middleName'].errors?.['minlength']">
+                        Please enter atleast 5 letters for Middlename
+                      </div>
+                      <div *ngIf="registerForm.controls['middleName'].errors?.['maxlength']">
+                        Please enter atmost 20 letters for Middlename
+                      </div>
+                    </div>
+                  </div>
+  
+              </div>
+  
+              <div class="form-outline mb-4">
+                  <input type="text" class="form-control" value="" required id="lastName" formControlName="lastName" placeholder="Last Name">
+  
+                  <div>
+                    <div *ngIf="registerForm.controls['lastName'].invalid && registerForm.controls['lastName'].dirty" class="text-danger">
+                      <div *ngIf="registerForm.controls['lastname'].errors?.['required']">
+                        Lastname is required
+                      </div>
+                      <div *ngIf="registerForm.controls['lastname'].errors?.['minlength']">
+                        Please enter atleast 5 letters for Middlename
+                      </div>
+                      <div *ngIf="registerForm.controls['lastname'].errors?.['maxlength']">
+                        Please enter atmost 20 letters for Lastname
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+  
+              <div class="form-outline mb-4">
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" required id="email" formControlName="email" placeholder="Email">
+                  </div>
+  
+                    <div>
+                      <div *ngIf="registerForm.controls['email'].invalid && registerForm.controls['email'].dirty" class="text-danger">
+                        <div *ngIf="registerForm.controls['email'].errors?.['required']">
+                          Email should not be empty
+                        </div>
+                        <div *ngIf="registerForm.controls['email'].errors?.['pattern']">
+                          Enter valid email
+                        </div>
+                      </div>
+                    </div>
+  
+              </div>
+  
+              <div class="form-outline mb-4">
+                  <input type="number" class="form-control" required id="phonenumber" formControlName="phonenumber" placeholder="Phone Number">
+  
+                  <div>
+                    <div>
+                      <div *ngIf="registerForm.controls['phonenumber'].invalid && registerForm.controls['phonenumber'].dirty" class="text-danger">
+                        <div *ngIf="registerForm.controls['phonenumber'].errors?.['required']">
+                          Phone Number must be of 10 digits
+                        </div>
+                        <div *ngIf="registerForm.controls['phonenumber'].errors?.['pattern']">
+                          Enter valid phone number
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+              </div>
+  
+              <div class="form-outline mb-4">
+                  <input type="text" class="form-control" required id="city" formControlName="city" placeholder="City">
+  
+                  <div *ngIf="registerForm.controls['city'].invalid && registerForm.controls['city'].dirty" class="text-danger">
+                    <div *ngIf="registerForm.controls['city'].errors?.['required']">
+                      Enter city name
+                    </div>
+                  </div>
+  
+              </div>
+  
+              <div class="form-outline mb-4">
+                  <select  class="form-select" required id="state" formControlName="state">
+                    <option selected disabled value="">Choose State</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chhattisgarh</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra </option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>
+  
+  
+                  </select>
+              </div>
+  
+              <div class="form-outline mb-4">
+                    <input type="text" class="form-control" required formControlName="country" placeholder="Country">
+  
+                    <div *ngIf="registerForm.controls['country'].invalid && registerForm.controls['country'].dirty" class="text-danger">
+                      <div *ngIf="registerForm.controls['country'].errors?.['required']">
+                        Enter country name
+                      </div>
+                    </div>
+  
+              </div>
+  
+              <div class="form-outline mb-4">
+                  <input type="text" class="form-control" formControlName="pincode" placeholder="Pin Code">
+  
+                  <div>
+                    <div>
+                      <div *ngIf="registerForm.controls['pincode'].invalid && registerForm.controls['pincode'].dirty" class="text-danger">
+                        <div *ngIf="registerForm.controls['pincode'].errors?.['required']">
+                          Pincode must be of 6 digits
+                        </div>
+                        <div *ngIf="registerForm.controls['pincode'].errors?.['pattern']">
+                          Enter valid pincode
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+              </div>
+              
+              <div class="form-outline mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="tc" required>
+                  <label class="form-check-label" for="checkbox">
+                    Agree to terms and conditions
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <p>
+                  <a>
+                    <button class="btn btn-primary" type="submit"  >Submit form</button>
+                  </a>
+                </p>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <footer></footer>
+  
+  
+</section> -->

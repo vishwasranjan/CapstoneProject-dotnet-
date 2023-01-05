@@ -1,0 +1,29 @@
+<div class="container c">
+    <br/>
+    <br/>
+     <h2>Existing Payees</h2>
+     <br/>
+     <br/>
+     <div class="row">
+       <div class="col-md-3"><h5>Customer Id</h5></div>
+       <div class="col-md-3"><h5>Name</h5></div>
+       <div class="col-md-3"><h5>Account No</h5></div>
+       
+     </div>
+<br/>
+    <div *ngFor="let p of payees;let i=index">
+     <div class="row">
+        <div class="col-md-4">
+            {{p.payeeId}}
+
+        </div>
+      <div class="col-md-4">
+        {{u[i].firstName}}
+</div>
+          <div class="col-md-4">
+               {{p.payee_acc_no}}
+  
+          </div>
+    <hr/>
+    </div>
+</div>

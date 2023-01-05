@@ -1,0 +1,87 @@
+
+.col-md-9,col{
+    padding:60px;
+} 
+a{  
+    
+    margin-left: 20px; 
+    color: #81afec;
+    font-weight:bold;
+}
+h4,h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 20px;
+    
+
+
+}
+
+.contact-details-additional-info{
+    margin-left: 20px;
+
+}
+
+.content{
+    margin-left: 20px;
+}
+
+
+.panel{
+    
+    background-color: #cce1fc;
+    
+    font-weight: lighter;  }
+span{
+    color:#81afec;
+}
+button{
+    background-color: #3479d3;
+    border-radius:11px 10px;
+    font-size: 10px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background: #325482;
+    padding: 11px 10px 11px 20px;
+    text-align: left;
+    border-radius: 20px;
+    margin-left: 10px;
+    position: relative;
+    min-width: 112px;
+    padding-right: 35px;
+    border: 1px solid #325482;
+}
+p{
+    margin-left:20px;
+}
+
+@media screen and (max-width: 1500px) {
+     .container, .col-md-9,.cta-panel__inner {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+@media screen and (max-width:  1500px) {
+  
+    .panel,.row,.float-start,.button,.p {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px) {
+  
+    .panel,.row,.float-start,.button,.p {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px){
+    .container, .col-md-9,.cta-panel__inner {
+     width: 100%; 
+   }
+}
+#bannerimage {
+    width: 100%;
+    background-image: url(https://png.pngtree.com/back_origin_pic/03/99/90/d410800f7d7d328ffaf95e5b49fada7d.jpg);
+    height: 40px;
+    background-position: center;
+    padding: 50px;
+  }

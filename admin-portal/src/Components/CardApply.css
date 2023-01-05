@@ -1,0 +1,33 @@
+.card-head-container{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 40px;
+    background-color: #628ec7;
+}
+.loanlist-button-check{
+    font-size:18px;
+    color:green;
+    border-width: 0px;
+    margin-top: 3px;
+}
+.loanlist-button-remove{
+    font-size:18px;
+    color:rgb(225, 39, 39);
+    border-width: 0px;
+    margin-top: 3px;
+}
+.loan-list{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 3px;
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.loan-list div:hover{
+    background-color: #d0def1;
+}

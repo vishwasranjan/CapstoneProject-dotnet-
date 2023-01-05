@@ -1,0 +1,108 @@
+<!-- <section class="vh-100 bg-image"
+  style="background-image: url('https://wallpapersmug.com/download/3840x2400/35d986/circles-colorful-bubble.jpg');"> -->
+
+
+<div class="container h-100">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+      <div class="card" style="border-radius: 15px;">
+        <div class="card-body p-5">
+
+          <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit(registerForm.value)">
+
+            <div class="form-outline mb-4">
+              <label for="accountNumber" class="form-label">Account Number</label>
+              <input type="text" name="accountNumber" class="form-control" placeholder="Recipient's Account Number"
+                formControlName="accountNumber">
+
+              <div>
+                <div>
+                  <div
+                    *ngIf="registerForm.controls['accountNumber'].invalid && registerForm.controls['accountNumber'].dirty"
+                    class="text-danger">
+                    <div *ngIf="registerForm.controls['accountNumber'].errors?.['required']">
+                      Enter your account number
+                    </div>
+                    <div *ngIf="registerForm.controls['accountNumber'].errors?.['pattern']">
+                      Account Number must be of 16 digits
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label for="accountHolderName" class="form-label">Account Holder Name</label>
+              <input type="text" name="accountHolderName" class="form-control"
+                placeholder="Recipient's Account Holder Name" formControlName="accountHolderName">
+
+              <div>
+                <div
+                  *ngIf="registerForm.controls['accountHolderName'].dirty && registerForm.controls['accountHolderName'].invalid"
+                  class="text-danger">
+                  <div *ngIf="registerForm.controls['accountHolderName'].errors?.['required']">
+                    Card Holder Name is required
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label for="ifsc_payee" class="form-label">IFSC code</label>
+              <input type="text" class="form-control" formControlName="ifsc_payee" required
+                placeholder="Recipient's IFSC Code">
+
+              <div>
+                <div *ngIf="registerForm.controls['ifsc_payee'].invalid && registerForm.controls['ifsc_payee'].dirty"
+                  class="text-danger">
+                  <div *ngIf="registerForm.controls['ifsc_payee'].errors?.['required']">
+                    IFSC Code must be of 11 digits
+                  </div>
+                  <div *ngIf="registerForm.controls['ifsc_payee'].errors?.['pattern']">
+                    Wrong IFSC Code pattern
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-outline mb-4">
+              <div class="form-outline mb-4">
+                <label for="amount" class="form-label">Amount to be transfered</label>
+                <input type="number" class="form-control" formControlName="amount" required placeholder="Amount">
+                <div>
+                  <div *ngIf="registerForm.controls['amount'].invalid && registerForm.controls['amount'].dirty"
+                    class="text-danger">
+                    <div *ngIf="registerForm.controls['amount'].errors?.['required']">
+                      Enter amount to be transfered
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Save For Future Use
+                  </label>
+                </div><br />
+                <div class="row">
+                  <div class="col-md-3">
+                    <button class="btn btn-outline-primary mr-1">
+                      Proceed
+                    </button>
+                  </div> &nbsp;
+                  <div class="col-md-4">
+                    <button class="btn btn-outline-primary mr-1">
+                      Back to home
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+          </form>
+         {{errmsg}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer></footer>

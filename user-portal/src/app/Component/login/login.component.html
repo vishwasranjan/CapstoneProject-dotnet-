@@ -1,0 +1,71 @@
+<section class="background-radial-gradient overflow-hidden">
+    <style>
+
+    </style>
+
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+        <div class="row gx-lg-5 align-items-center mb-5">
+            <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+                <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%);">
+                    Cosmopolitian Bank <br />
+                    <!-- <span style="color: hsl(218, 81%, 75%)">for your business</span> -->
+                </h1>
+                <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+                    Solutions to all your finances, internet banking at your finger tips.
+                </p>
+            </div>
+
+            <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+                <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+                <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+                <div class="card bg-glass">
+                    <div class="card-body px-4 py-5 px-md-5">
+                        <form>
+                            <!-- 2 column grid layout with text inputs for the first and last names -->
+                            <div class="row">
+
+                                <div class="form-outline">
+
+                                    <input type="text" id="form3Example1" name="name" class="form-control"
+                                        placeholder="User Name" [(ngModel)]="username">
+                                    <label class="form-label" for="form3Example1">Username</label>
+                                </div>
+
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="form3Example4" name="password" class="form-control"
+                                    placeholder="Password" [(ngModel)]="password">
+                                <label class="form-label" for="form3Example4">Password</label>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33"
+                                    checked />
+                                <label class="form-check-label" for="form2Example33">
+                                    Agree to our terms and conditions
+                                </label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="error">{{errorMessage}}</div>
+                            <button class="btn btn-primary btn-block mb-4" (click)="login()">
+                                Log In
+                            </button>
+
+                            <div>
+                                <!-- <p class="mb-0">Don't have an account? <a href="/new-user" class="text-black-50 fw-bold">Sign
+                                        Up</a>
+                                </p>  -->
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

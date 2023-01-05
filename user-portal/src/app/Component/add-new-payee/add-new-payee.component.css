@@ -1,0 +1,40 @@
+.c
+{
+    background-image: linear-gradient(gainsboro, lightblue);
+}
+
+h1{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    color:#243d5e; 
+    padding-left: 60px;
+
+}
+
+.payee-form
+{
+    margin-top: 50px;
+    margin-left: 200px;
+    background-color: ghostwhite;
+    width:50%;
+    border-radius: 20px;
+    box-shadow: 2px 1px gainsboro;
+    padding-bottom: 30px;
+    /*  */
+}
+.f{
+    text-align: center;
+    margin-left: 300px;
+}
+.row{
+    color: azure;
+}
+.container{
+    background-image: url("https://time.com/nextadvisor/wp-content/uploads/2022/11/How-to-Transfer-Money-from-One-Bank-to-Another-884x584.jpg");
+}
+.form-outline{
+    padding: 10px;
+
+}

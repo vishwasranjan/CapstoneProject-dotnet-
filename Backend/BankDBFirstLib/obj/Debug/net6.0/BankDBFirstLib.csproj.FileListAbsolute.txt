@@ -1,0 +1,14 @@
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\bin\Debug\net6.0\BankDBFirstLib.deps.json
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\bin\Debug\net6.0\BankDBFirstLib.dll
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\bin\Debug\net6.0\BankDBFirstLib.pdb
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.csproj.AssemblyReference.cache
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.AssemblyInfoInputs.cache
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.AssemblyInfo.cs
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.csproj.CoreCompileInputs.cache
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.dll
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\obj\Debug\net6.0\refint\BankDBFirstLib.dll
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.pdb
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\obj\Debug\net6.0\ref\BankDBFirstLib.dll
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\bin\Debug\net6.0\BankDBFirstLib.runtimeconfig.json
+C:\dotNet\mvc\Capstone_Project\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.genruntimeconfig.cache

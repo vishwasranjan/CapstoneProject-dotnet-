@@ -1,0 +1,77 @@
+
+
+<div style="width:100%; background-color:ghostwhite; height:50px; box-shadow: 3px 3px 2px 2px lightgray;">
+    <div class="dropdown">
+        <button class="dropbtn"><a class="navbar" routerLink="/home">Home</a></button>
+    </div>
+
+
+    <div class="dropdown">
+        <button class="dropbtn"><p class="navbar">Funds Transfer</p></button>
+        <div class="dropdown-content">
+            <a [routerLink]="['/bank-transfer']">Initiate Transfer</a>
+            <a [routerLink]="['/add-new-payee']">Add New Payee</a>
+            <a [routerLink]="['/existing-payees']">Existing Payee</a>
+        </div>
+    </div>
+
+
+    <div class="dropdown">
+        <button class="dropbtn"><p class="navbar">Cards</p></button>
+        <div class="dropdown-content">
+            <a [routerLink]="['/debit-card']">Debit Card</a>
+            <a [routerLink]="['/credit-card']">Credit Card</a>
+        </div>
+    </div>
+
+
+    <div class="dropdown">
+        <button class="dropbtn"><p class="navbar">Loans</p></button>
+        <div class="dropdown-content">
+            <!-- <a href="#">Vehicle Loan</a>
+            <a href="#">Personal Loan</a> -->
+            <a [routerLink]="['/home-loan']">Home Loan</a>
+        </div>
+    </div>
+
+
+    <div class="dropdown">
+        <button class="dropbtn"><p class="navbar" >Account</p></button>
+        <div class="dropdown-content">
+            <!-- <a href="#">Current Account</a>
+            <a href="#">Savings Account</a> -->
+            <a [routerLink]="['/transaction-details']">Transaction History</a>
+        </div>
+    </div>
+
+
+    <div class="dropdown">
+        <button class="dropbtn"><p class="navbar">Help and Contact</p></button>
+        <div class="dropdown-content">
+            <!-- <a [routerLink]="['/privacy-and-policy']">Privacy and Policy</a> -->
+            <a [routerLink]="['/online-assist']">Online Assist</a>
+            <!-- <a href="#"></a> -->
+        </div>
+
+    </div>
+
+    <p style="text-align: right;" >
+      <a (click)="logout()"><button  class="btn btn-light dropbtn-block mb-4 b">Logout</button></a>
+    </p>
+</div>
+<br/>
+<br/>
+
+<app-home></app-home>
+<!-- <div class="card" style="width: 200px; height: 200px;">
+  <img src="https://cdn-icons-png.flaticon.com/512/50/50041.png" class="card-img-top" alt="new user">
+  <div class="card-body">
+    <a href="#" class="btn btn-primary">Add New User</a>
+  </div>
+</div> -->
+
+
+
+
+
+<footer></footer>

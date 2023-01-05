@@ -1,0 +1,45 @@
+<div class="container t">
+    <br/>
+<h3>Transaction History</h3>
+<br/>
+    <div class="row">
+      
+
+    <div class="col-md-3">
+     <h5> Transaction Type</h5>
+    </div>
+    <div class="col-md-3">
+        <h5>Amount</h5>
+    </div>
+    <div class="col-md-3">
+        <h5>Time</h5>
+    </div>
+    </div>
+<hr/>
+ <div>
+
+    
+       <div *ngFor="let c of allTransactions">
+        <div class="row">
+
+            
+
+        <div class="col-md-3">
+            {{c.transactionType}}
+           </div>
+           <div class="col-md-3">
+            {{c.transaction_amount}}
+           </div>
+           <div class="col-md-3">
+            {{c.transaction_time}}
+           </div>
+
+      </div>
+      <hr/>
+       </div>
+
+    
+
+ </div>
+
+</div>

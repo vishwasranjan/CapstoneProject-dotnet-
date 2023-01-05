@@ -1,0 +1,57 @@
+
+<div class="c">
+  <div class="card-body p-5 d">
+    <div class="payee-form">
+      <h1>Add New Payee</h1><br />
+      <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit(registerForm.value)">
+  
+      <div class="form-outline">
+        <!-- <label for="accountHolderName" class="form-label">Account Holder Name</label> -->
+        <input type="text" name="accountHolderName" class="form-control"
+          placeholder="Account Holder Name" formControlName="accountHolderName">
+  
+        <div>
+          <div
+            *ngIf="registerForm.controls['accountHolderName'].dirty && registerForm.controls['accountHolderName'].invalid"
+            class="text-danger">
+            <div *ngIf="registerForm.controls['accountHolderName'].errors?.['required']">
+              Card Holder Name is required
+            </div>
+          </div>
+        </div>
+      </div>
+  
+        <br />
+  
+        <div class="form-outline">
+          <!-- <label for="accountNumber" class="form-label">Account Number</label> -->
+          <input type="text" name="accountNumber" class="form-control" placeholder=" Account Number"
+            formControlName="accountNumber">
+  
+          <div>
+            <div>
+              <div
+                *ngIf="registerForm.controls['accountNumber'].invalid && registerForm.controls['accountNumber'].dirty"
+                class="text-danger">
+                <div *ngIf="registerForm.controls['accountNumber'].errors?.['required']">
+                  Enter your account number
+                </div>
+                <div *ngIf="registerForm.controls['accountNumber'].errors?.['pattern']">
+                  Account Number must be of 16 digits
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3" style="padding: 10px">
+          <button class="btn btn-outline-primary mr-1">
+            Proceed
+          </button>
+        </div>
+  
+      </form>
+    </div>
+  </div>
+</div>
+<footer></footer>

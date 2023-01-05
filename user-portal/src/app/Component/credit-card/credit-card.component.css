@@ -1,0 +1,22 @@
+.Debit{
+  padding: 20px 20px;
+  margin: 10px 10px;
+}
+
+h4{
+
+  text-align: center;
+
+  color: #243d5e;
+
+}
+.card{
+  background-color: rgb(220, 217, 217, 0.5);
+    backdrop-filter: blur(14px);
+
+}
+.container{
+  padding-top: 30px;
+  /* background-color: lightcyan; */
+  /* background-image: url("https://images.unsplash.com/photo-1556742031-c6961e8560b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNyZWRpdCUyMGNhcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"); */
+}

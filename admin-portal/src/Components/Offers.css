@@ -1,0 +1,27 @@
+.add-offer-box{
+    padding: 10px;
+    border-style: solid;
+    border-width: .1px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+.add-offer-box div{
+    margin: 5px;
+}
+.heading{
+    text-align: center;
+}
+.offer-list{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.active-offers-head-container{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+h4{
+    position: relative;
+    left: 50px;
+}

@@ -1,0 +1,109 @@
+<div class="container">
+    <!-- <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 80%;"
+            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%
+        </div>
+    </div> -->
+    
+    <br />
+    <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit(registerForm.value)">
+        <h3>Apply for Home Loan <i class="fa fa-info-circle" aria-hidden="true"></i></h3><br />
+        <div class="card">
+            <!-- <h4>Required Home Loan Details</h4><br/> -->
+            <br/>
+            <div class="row g-3">
+                
+                <div class="col-md-4">
+                    <label for="customerid" class="form-label">Customer Id</label>
+                    <input type="number" name="customerid" class="form-control" id="customerid" formControlName="customerid">
+                    <div *ngIf="registerForm.controls['customerid'].invalid && registerForm.controls['customerid'].dirty"
+                    class="text-danger">
+                    <div *ngIf="registerForm.controls['customerid'].errors?.['required']">
+                      Enter your customerid
+                    </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <label for="loantype" class="form-label">Loan Type</label>
+                    <div class="input-group sm-3">
+                        <select class="form-select" id="loantype" formControlName="loantype">
+                            <option selected>Select</option>
+                            <option value="Home Purchase Loan">Home Purchase Loan</option>
+                            <option value="Home Construction Loan">Home Construction Loan</option>
+                            <option value="Land Purchase Loan">Land Purchase Loan</option>
+                            <option value="Joint Home Loan">Joint Home Loan</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationServer01" class="form-label">Detailed Purpose of Loan*</label>
+                    <div class="input-group sm-3">
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Select</option>
+                            <option value="1">Purchase of ready built house</option>
+                            <option value="2">To build a new house</option>
+                            <option value="3">To buy a plot of land for constructing his/her own house</option>
+                            <option value="4">For two or more people, for instance, spouses</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="amount" class="form-label">Required Loan Amount*</label>
+                    <input type="number" class="form-control" placeholder="Ex: 50000" id="amount" required formControlName="amount">
+
+                    <div *ngIf="registerForm.controls['amount'].invalid && registerForm.controls['amount'].dirty"
+                    class="text-danger">
+                    <div *ngIf="registerForm.controls['amount'].errors?.['required']">
+                      Enter amount of loan you want to apply
+                    </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <label for="noOfYears" class="form-label">Tenure(Years)* <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                    </label>
+                    <div class="input-group sm-3">
+                        <select class="form-select" name="noOfYears" id="noOfYears" formControlName="noOfYears">
+                            <option selected>Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="tc" required>
+                      <label style="font-family: American Typewriter, serif;" class="form-check-label" for="invalidCheck2" >
+                        <p>I have included all the required documents for your convenience. I have read all the terms and conditions for the loan and I request for the amount to repaid in full.</p>
+                      </label>
+                    </div>
+                </div>
+            </div>
+        </div><br/>
+        <div class="last">
+            <div class="row" style="padding-left: 250px;">
+                <div class="col-md-4">
+                    <p><a routerLink="/profile-ready"><button  class="btn btn-primary">Cancel</button></a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p><button type="submit" class="btn btn-primary">Apply</button>
+                    </p>
+                </div>
+            </div>
+        
+        </div><br/>
+    </form>
+    {{msg}}
+</div>
+<footer></footer>

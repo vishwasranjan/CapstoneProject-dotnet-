@@ -1,0 +1,404 @@
+ <section 
+  style="background-image: url('https://img.freepik.com/free-photo/credit-card-payment-buy-sell-products-service_1150-16379.jpg?w=2000');">
+
+
+<div class="container h-100">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+      <div class="card" style="border-radius: 15px;">
+        <div class="card-body p-5">
+          <h4>Online Credit Card Application &nbsp; <i class="fa fa-credit-card" style="color: #243d5e;" aria-hidden="true"></i></h4>
+
+          <form *ngIf="registerForm" [formGroup]="registerForm" class="form"
+            (ngSubmit)="submit(registerForm.value,registerForm.value)">
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="firstname">First Name</label>
+
+              <input type="text" class="form-control" formControlName="firstname">
+
+              <div>
+                <div *ngIf="registerForm.controls['firstname'].invalid && registerForm.controls['firstname'].dirty"
+                  class="text-danger">
+                  <div *ngIf="registerForm.controls['firstname'].errors?.['required']">
+                    Firstname is required
+                  </div>
+                  <div *ngIf="registerForm.controls['firstname'].errors?.['minlength']">
+                    Please enter atleast 5 letters for Firstname
+                  </div>
+                  <div *ngIf="registerForm.controls['firstname'].errors?.['maxlength']">
+                    Please enter atmost 20 letters for Firstname
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="middlename">Middle Name</label>
+
+              <input type="text" class="form-control" formControlName="middlename">
+
+              <div>
+                <div *ngIf="registerForm.controls['middlename'].invalid && registerForm.controls['middlename'].dirty"
+                  class="text-danger">
+                  <div *ngIf="registerForm.controls['middlename'].errors?.['required']">
+                    Middlename is required
+                  </div>
+                  <div *ngIf="registerForm.controls['middlename'].errors?.['minlength']">
+                    Please enter atleast 5 letters for Middlename
+                  </div>
+                  <div *ngIf="registerForm.controls['middlename'].errors?.['maxlength']">
+                    Please enter atmost 20 letters for Middlename
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="lastname">Last Name</label>
+
+              <input type="text" class="form-control" formControlName="lastname">
+
+              <div>
+                <div *ngIf="registerForm.controls['lastname'].invalid && registerForm.controls['lastname'].dirty"
+                  class="text-danger">
+                  <div *ngIf="registerForm.controls['lastname'].errors?.['required']">
+                    Lastname is required
+                  </div>
+                  <div *ngIf="registerForm.controls['lastname'].errors?.['minlength']">
+                    Please enter atleast 5 letters for Lastname
+                  </div>
+                  <div *ngIf="registerForm.controls['lastname'].errors?.['maxlength']">
+                    Please enter atmost 20 letters for Lastname
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-outline mb-4">
+              <label for="accountnum" class="form-label">Account Number</label>
+              <input type="number" class="form-control" formControlName="accountnum">
+
+              <div>
+                <div>
+                  <div *ngIf="registerForm.controls['accountnum'].invalid && registerForm.controls['accountnum'].dirty"
+                    class="text-danger">
+                    <div *ngIf="registerForm.controls['accountnum'].errors?.['required']">
+                      Enter your account number
+                    </div>
+                    <div *ngIf="registerForm.controls['accountnum'].errors?.['pattern']">
+                      Account Number must be of 16 digits
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-outline mb-4">
+              <label for="accounttype" class="form-label">Account Type</label>
+              <select class="form-select" required id="accounttype" formControlName="accounttype">
+                <option selected disabled value="">Choose...</option>
+                <option>Savings</option>
+                <option>Current</option>
+              </select>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label for="branch" class="form-label">Branch</label>
+              <input type="text" class="form-control" formControlName="branch" required>
+
+              <div *ngIf="registerForm.controls['branch'].invalid && registerForm.controls['branch'].dirty"
+                class="text-danger">
+                <div *ngIf="registerForm.controls['branch'].errors?.['required']">
+                  Enter branch name
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-outline mb-4">
+              <label for="ifsc_code" class="form-label">IFSC Code</label>
+              <input type="text" class="form-control" formControlName="ifsc_code" required>
+              
+                <div>
+                  <div *ngIf="registerForm.controls['ifsc_code'].invalid && registerForm.controls['ifsc_code'].dirty"
+                    class="text-danger">
+                    <div *ngIf="registerForm.controls['ifsc_code'].errors?.['required']">
+                      IFSC Code must be of 11 digits
+                    </div>
+                    <div *ngIf="registerForm.controls['ifsc_code'].errors?.['pattern']">
+                      Wrong IFSC Code pattern
+                    </div>
+                  </div>
+                </div>
+            
+
+            </div>
+
+            <!-- <div class="form-outline mb-4">
+              <label for="occupation" class="form-label">Occupation</label>
+              <input type="text" class="form-control" formControlName="occupation" required>
+
+              <div *ngIf="registerForm.controls['occupation'].invalid && registerForm.controls['occupation'].dirty"
+                class="text-danger">
+                <div *ngIf="registerForm.controls['occupation'].errors?.['required']">
+                  Enter your occupation
+                </div>
+              </div>
+
+            </div> -->
+
+            <!-- <div class="form-outline mb-4">
+              <label for="salary" class="form-label">Salary</label>
+              <input type="text" class="form-control" formControlName="salary" required>
+
+              <div *ngIf="registerForm.controls['salary'].invalid && registerForm.controls['salary'].dirty"
+                class="text-danger">
+                <div *ngIf="registerForm.controls['salary'].errors?.['required']">
+                  Enter your salary
+                </div>
+              </div>
+
+            </div>  -->
+
+             <div class="form-outline mb-4">
+              <label for="phonenumber" class="form-label">Phone Number</label>
+              <input type="number" class="form-control" formControlName="phonenumber" required>
+
+              <div>
+                <div>
+                  <div
+                    *ngIf="registerForm.controls['phonenumber'].invalid && registerForm.controls['phonenumber'].dirty"
+                    class="text-danger">
+                    <div *ngIf="registerForm.controls['phonenumber'].errors?.['required']">
+                      Phone Number must be of 10 digits
+                    </div>
+                    <div *ngIf="registerForm.controls['phonenumber'].errors?.['pattern']">
+                      Phone Number must not be greater than 10 digits
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="tc" required>
+                <label class="form-check-label" for="checkbox">
+                  Agree to terms and conditions
+                </label>
+              </div>
+            </div><br/>
+            <div class="col-12">
+              <button class="btn btn-outline-primary mr-1" type="submit">Submit form</button>
+            </div>
+
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br/>
+</section> 
+<footer></footer>
+
+ 
+
+
+
+
+<!-- <section 
+  style="background-image: url('https://images.unsplash.com/photo-1594025741273-167998b49a02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3JlZGl0JTIwY2FyZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60');"> -->
+  <!-- <section 
+  style="background-image: url('https://blog.printecgroup.com/hubfs/Card2.jpg');background-repeat: no-repeat; background-size: cover;">
+<navbar></navbar>
+
+<div class="container h-100">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+      <div class="card" style="border-radius: 15px;">
+        <div class="card-body p-5">
+          <h4>Online Debit Card Application &nbsp; <i class="fa fa-credit-card-alt" style="color: #243d5e;" aria-hidden="true"></i></h4><br/>
+
+          <form *ngIf="registerForm" [formGroup]="registerForm" class="form"
+            (ngSubmit)="submit(registerForm.value,registerForm.value)">
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="firstname">First Name</label>
+
+              <input type="text" class="form-control" id="firstname" formControlName="firstname">
+
+              <div>
+                <div *ngIf="registerForm.controls['firstname'].invalid && registerForm.controls['firstname'].dirty"
+                  class="text-danger">
+                  <div *ngIf="registerForm.controls['firstname'].errors?.['required']">
+                    Firstname is required
+                  </div>
+                  <div *ngIf="registerForm.controls['firstname'].errors?.['minlength']">
+                    Please enter atleast 5 letters for Firstname
+                  </div>
+                  <div *ngIf="registerForm.controls['firstname'].errors?.['maxlength']">
+                    Please enter atmost 20 letters for Firstname
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="middlename">Middle Name</label>
+
+              <input type="text" class="form-control" formControlName="middlename">
+
+              <div>
+                <div *ngIf="registerForm.controls['middlename'].invalid && registerForm.controls['middlename'].dirty"
+                  class="text-danger">
+                  <div *ngIf="registerForm.controls['middlename'].errors?.['required']">
+                    Middlename is required
+                  </div>
+                  <div *ngIf="registerForm.controls['middlename'].errors?.['minlength']">
+                    Please enter atleast 5 letters for Middlename
+                  </div>
+                  <div *ngIf="registerForm.controls['middlename'].errors?.['maxlength']">
+                    Please enter atmost 20 letters for Middlename
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="lastname">Last Name</label>
+
+              <input type="text" class="form-control" formControlName="lastname">
+
+              <div>
+                <div *ngIf="registerForm.controls['lastname'].invalid && registerForm.controls['lastname'].dirty"
+                  class="text-danger">
+                  <div *ngIf="registerForm.controls['lastname'].errors?.['required']">
+                    Lastname is required
+                  </div>
+                  <div *ngIf="registerForm.controls['lastname'].errors?.['minlength']">
+                    Please enter atleast 5 letters for Lastname
+                  </div>
+                  <div *ngIf="registerForm.controls['lastname'].errors?.['maxlength']">
+                    Please enter atmost 20 letters for Lastname
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-outline mb-4">
+              <label for="accountnum" class="form-label">Account Number</label>
+              <input type="text" class="form-control" formControlName="accountnum">
+
+              <div>
+                <div>
+                  <div *ngIf="registerForm.controls['accountnum'].invalid && registerForm.controls['accountnum'].dirty"
+                    class="text-danger">
+                    <div *ngIf="registerForm.controls['accountnum'].errors?.['required']">
+                      Enter your account number
+                    </div>
+                    <div *ngIf="registerForm.controls['accountnum'].errors?.['pattern']">
+                      Account Number must be of 16 digits
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-outline mb-4">
+
+              <label for="accounttype" class="form-label">Account Type</label>
+              <select class="form-select" required id="accounttype" formControlName="accounttype">
+                <option selected disabled value="">Choose...</option>
+                <option>Savings</option>
+                <option>Current</option>
+              </select>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label for="branch" class="form-label">Branch</label>
+              <input type="text" class="form-control" formControlName="branch" required>
+
+              <div *ngIf="registerForm.controls['branch'].invalid && registerForm.controls['branch'].dirty"
+                class="text-danger">
+                <div *ngIf="registerForm.controls['branch'].errors?.['required']">
+                  Enter branch name
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-outline mb-4">
+              <label for="ifsc_code" class="form-label">IFSC Code</label>
+              <input type="text" class="form-control" formControlName="ifsc_code" required>
+
+              <div>
+                <div>
+                  <div *ngIf="registerForm.controls['ifsc_code'].invalid && registerForm.controls['ifsc_code'].dirty"
+                    class="text-danger">
+                    <div *ngIf="registerForm.controls['ifsc_code'].errors?.['required']">
+                      IFSC Code must be of 11 digits
+                    </div>
+                    <div *ngIf="registerForm.controls['ifsc_code'].errors?.['pattern']">
+                      Wrong IFSC Code pattern
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-outline mb-4">
+              <label for="phonenumber" class="form-label">Phone Number</label>
+              <input type="number" class="form-control" formControlName="phonenumber" required>
+
+              <div>
+                <div>
+                  <div
+                    *ngIf="registerForm.controls['phonenumber'].invalid && registerForm.controls['phonenumber'].dirty"
+                    class="text-danger">
+                    <div *ngIf="registerForm.controls['phonenumber'].errors?.['required']">
+                      Phone Number must be of 10 digits
+                    </div>
+                    <div *ngIf="registerForm.controls['phonenumber'].errors?.['pattern']">
+                      Enter valid phone number
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="tc" required>
+                <label class="form-check-label" for="checkbox">
+                  Agree to terms and conditions
+                </label>
+              </div>
+            </div><br/>
+            <div class="col-12">
+              <button class="btn btn-primary mr-1" type="submit">Submit form</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br/>
+<footer></footer>
+</section> -->

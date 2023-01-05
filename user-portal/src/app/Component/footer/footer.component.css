@@ -1,0 +1,14 @@
+.footer {
+    position: relative;
+     flex: left; 
+    padding-left: 8%;
+     bottom: 1px; 
+    height: 2.5%;
+    width: 100%; 
+    background-image: linear-gradient(to right, #234168, #4a6d9b);
+    color: rgb(243, 243, 243);
+    
+}
+a{
+     color: white; text-decoration: none;
+}

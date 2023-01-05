@@ -1,0 +1,114 @@
+hr
+{
+    color:mediumslateblue;
+    width:30%;
+     margin-left: 400px;
+    
+}
+h1{
+    text-align: center;
+    font-family: 'Bahnschrift SemiBold';
+    color: #234168;
+}
+img
+{
+    height: 400px;
+    width:500px;
+}
+.t
+{
+    text-align: center;
+    color:#699ada;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+a
+{
+    color: #fff;
+    text-decoration: none
+}
+body
+{
+    height: 100vh;
+    background: #3e3232;
+    font-family: 'Poppins', sans-sherif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden
+}
+    .ticker
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 50px;
+        margin: 0 auto
+    }
+    .news
+    {
+        width: 80%;
+        background:#87CEFA;
+        padding: 0 2%
+    }
+    .title
+    {
+        width: 20%;
+        text-align: center;
+        background:#87CEFA;
+        position: relative
+    }
+    .title:after
+    {
+        position: absolute;
+        content: "";
+        right: -22%;
+        border-left: 20px solid #87CEFA;
+        border-top: 28px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 21px solid transparent;
+        top: 0px
+    }
+    .title h5
+    {
+        font-size: 18px;
+        margin: 8% 0;
+    }
+    .news marquee
+    {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+    .news-content p
+    {
+        margin-right: 41px;
+        display: inline
+    }
+.travel{
+    background-image: url("https://img.freepik.com/premium-photo/blurry-chromatic-color-tunnel-car-traffic-motion-blur-motion-blur-visualizies-speed-dynamics_1359-3333.jpg?w=900");
+    /* background-image: url("https://ma-hub.imgix.net/wp-images/2019/04/27224112/Hero-Motion-blur.jpg?w=1600&h=850&auto=format"); */
+    background-position: center;
+    background-size: cover;
+}
+
+.electronics{
+    background-image: url("https://tse3.mm.bing.net/th/id/OIP.mHNYlhnpCZHR7dKyi7LS8QHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7");
+    background-position: center;
+    background-size: cover;
+}
+
+.health-wellness{
+    background-image: url("https://cdn.uconnectlabs.com/wp-content/uploads/sites/122/2022/08/624111-768x443.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.userd
+{
+    text-align: center;
+    background-image: linear-gradient(gainsboro, azure);
+    color:#234168;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 2px 3px 2px 1px  gainsboro;
+}

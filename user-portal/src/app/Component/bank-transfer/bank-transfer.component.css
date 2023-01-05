@@ -1,0 +1,17 @@
+.container{
+    padding-top: 60px;
+     align-items: center;
+    background-color: light;
+    background-image: url("https://images.unsplash.com/photo-1593182440959-9d5165b29b59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGF5bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+    padding-left: 0;
+    padding-right: 0;
+}
+h3{
+    text-align: center;
+    color: blueviolet;
+}
+.card-body{
+    border-radius: 15px;
+    background-color: lightgray;
+}
+
