@@ -1,4 +1,4 @@
-.container{
+.loan-container{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJPNlybXT7uj4Hi76iZcZdzofxnV0rBoAQfA&usqp=CAU");
 }
 .add-offer-box{
@@ -42,6 +42,6 @@ h4{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-.row{
+.offer-row{
     padding-left: 250px;
 }
