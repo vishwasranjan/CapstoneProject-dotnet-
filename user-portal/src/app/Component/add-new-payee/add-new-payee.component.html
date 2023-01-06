@@ -1,8 +1,11 @@
-
-<div class="c">
-  <div class="card-body p-5 d">
-    <div class="payee-form">
-      <h1>Add New Payee</h1><br />
+<section
+  style="background-image: url('https://www.immigrationworld.com/wp-content/uploads/2019/05/money-transfer-3588301_640.jpg');">
+<navbar></navbar>
+<div class="container h-100">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+      <div class="card-body p-5" style="border-radius: 15px;">
+        <h1>Add New Payee &nbsp; <i class="fa fa-address-card" style="color: #243d5e;" aria-hidden="true"></i></h1><br />
       <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit(registerForm.value)">
   
       <div class="form-outline">
@@ -45,13 +48,15 @@
         </div>
   
         <div class="col-md-3" style="padding: 10px">
-          <button class="btn btn-outline-primary mr-1">
+          <button class="btn btn-primary mr-1">
             Proceed
           </button>
         </div>
   
       </form>
+      </div>        
     </div>
   </div>
 </div>
+</section>
 <footer></footer>

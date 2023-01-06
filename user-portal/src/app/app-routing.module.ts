@@ -17,6 +17,10 @@ import { ExistingPayeesComponent } from './Component/existing-payees/existing-pa
 import { TransactionDetailsComponent } from './Component/transaction-details/transaction-details.component';
 import { HlApplynowComponent } from './Component/hl-applynow/hl-applynow.component';
 import { OnlineAssistComponent } from './Component/online-assist/online-assist.component';
+import { NavbarComponent } from './Component/navbar/navbar.component';
+import { ChatComponent } from './Component/chat/chat.component';
+import { ChatbotModelComponent } from './Component/chatbot-model/chatbot-model.component';
+import { EmailServiceComponent } from './Component/email-service/email-service.component';
 const routes: Routes=[
    
   {
@@ -84,8 +88,19 @@ const routes: Routes=[
   {
     path:'online-assist', component: OnlineAssistComponent,
     canActivate: [AuthGuardGuard]
+  },
+  {
+    path: 'navbar', component: NavbarComponent
+  },
+  {
+    path:'chat', component: ChatComponent
+  },
+  {
+    path:'chatbot-model', component: ChatbotModelComponent
+  },
+  {
+    path:'email-service', component: EmailServiceComponent
   }
-  
 
  
 ]

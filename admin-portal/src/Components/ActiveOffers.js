@@ -13,7 +13,7 @@ export class ActiveOffers extends Component{
     constructor(){
         super();
 
-        fetch("http://localhost:5050/User/ActiveOffers")
+        fetch("http://localhost:5293/User/ActiveOffers")
             .then(response => response.json())
             .then(data => {
                 console.log('data'+data);

@@ -2,6 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 using OnlineNetBankingWebAPI.Models;
 using BankDBFirstLib;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
+using System;
 
 namespace OnlineNetBankingWebAPI.Controllers
 {
@@ -18,6 +22,7 @@ namespace OnlineNetBankingWebAPI.Controllers
         }
 
         [HttpGet]
+        [Route("getallUsers")]
         public IEnumerable<userDetail> GetAllUser()
         {
             //Get all the users
@@ -115,7 +120,7 @@ namespace OnlineNetBankingWebAPI.Controllers
 
         [HttpGet]
         [Route("getUserByAcc")]
-        public userDetail getUserById(string acc)
+        public userDetail getUserByAccount(string acc)
         {
             return _dal.getUserByAcc(acc);
         }
@@ -216,7 +221,78 @@ namespace OnlineNetBankingWebAPI.Controllers
         public IEnumerable<Cardapply> ShowCardApply()
         {
             return _dal.ShowCardApply();
-    }
+        }
+
+        [HttpGet]
+        [Route("AdminLogin")]
+        public bool AdminLogin(int id, string password)
+        {
+            return _dal.AdminLogin(id, password);
+        }
+
+        [HttpGet]
+        [Route("checkAcc")]
+        public bool ChkAcc(int custId)
+        {
+            return _dal.checkAcc(custId);
+        }
+
+
+
+
+        [HttpPost]
+        [Route("LoginByToken")]
+        public IActionResult LoginByToken(int id, string password)
+        {
+            var admin = _dal.GetAdminById(id);
+            if (id == admin.Admin_id && password == admin.Admin_password)
+            {
+                //return OK with token
+                var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ByYM000OLlMQG6VVVp1OH7Xzyr7gHuw1qvUC5dcGt3SNM"));
+
+                var token = new JwtSecurityToken(
+                issuer: "cosmopolitian",
+                audience: "cosmopolitian",
+                expires: DateTime.Now.AddHours(3),
+                                   //claims: new List<Claim> { new Claim("t1", "v1"), new Claim("t2", "v2") },
+                                   signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
+                );
+
+
+                return Ok(new
+                {
+                    token = new JwtSecurityTokenHandler().WriteToken(token),
+                    expiration = token.ValidTo
+                });
+
+
+            }
+            return Unauthorized();
+        }
+
+        [HttpPost]
+        [Route("AddOffer")]
+        public void AddOffer(offers offers)
+        {
+            _dal.AddOffer(offers);
+        }
+
+        [HttpGet]
+        [Route("ActiveOffers")]
+        public List<offers> ActiveOffers()
+        {
+            return _dal.ActiveOffers();
+        }
+
+        [HttpDelete]
+        [Route("DeleteOffersbyID")]
+        public void DeleteOffers(int offerid)
+        {
+            _dal.DeleteOffers(offerid);
+        }
+
+
+
     }
 
     

@@ -7,11 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  constructor(private userService : UserServiceService, private router: Router){
-    
-  }
-  logout(){
-this.userService.removeToken();
-this.router.navigate(['login']);
-  }
+  // constructor(private userService : UserServiceService, private router: Router){}
+//   logout(){
+// this.userService.removeToken();
+// this.router.navigate(['login']);
+//   }
 }

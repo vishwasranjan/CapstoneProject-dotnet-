@@ -1,20 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dotNet\\mvc\\Capstone_Project\\OnlineNetBankingWebAPI\\OnlineNetBankingWebAPI.csproj": {}
+<<<<<<< HEAD
+    "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\OnlineNetBankingWebAPI\\OnlineNetBankingWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\dotNet\\mvc\\Capstone_Project\\BankDBFirstLib\\BankDBFirstLib.csproj": {
+    "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dotNet\\mvc\\Capstone_Project\\BankDBFirstLib\\BankDBFirstLib.csproj",
+        "projectUniqueName": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
         "projectName": "BankDBFirstLib",
-        "projectPath": "C:\\dotNet\\mvc\\Capstone_Project\\BankDBFirstLib\\BankDBFirstLib.csproj",
-        "packagesPath": "C:\\Users\\Kritika.kashyap\\.nuget\\packages\\",
-        "outputPath": "C:\\dotNet\\mvc\\Capstone_Project\\BankDBFirstLib\\obj\\",
+        "projectPath": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
+        "packagesPath": "C:\\Users\\vishwas.ranjan\\.nuget\\packages\\",
+        "outputPath": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kritika.kashyap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vishwas.ranjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\OnlineNetBankingWebAPI\\OnlineNetBankingWebAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
+        "projectName": "BankDBFirstLib",
+        "projectPath": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
+        "packagesPath": "C:\\Users\\susree.sadangi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\susree.sadangi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> ea185529ff0e3d346cbb78b73b24ac3f9a55184f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,17 +98,31 @@
         }
       }
     },
-    "C:\\dotNet\\mvc\\Capstone_Project\\OnlineNetBankingWebAPI\\OnlineNetBankingWebAPI.csproj": {
+<<<<<<< HEAD
+    "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\OnlineNetBankingWebAPI\\OnlineNetBankingWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dotNet\\mvc\\Capstone_Project\\OnlineNetBankingWebAPI\\OnlineNetBankingWebAPI.csproj",
+        "projectUniqueName": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\OnlineNetBankingWebAPI\\OnlineNetBankingWebAPI.csproj",
         "projectName": "OnlineNetBankingWebAPI",
-        "projectPath": "C:\\dotNet\\mvc\\Capstone_Project\\OnlineNetBankingWebAPI\\OnlineNetBankingWebAPI.csproj",
-        "packagesPath": "C:\\Users\\Kritika.kashyap\\.nuget\\packages\\",
-        "outputPath": "C:\\dotNet\\mvc\\Capstone_Project\\OnlineNetBankingWebAPI\\obj\\",
+        "projectPath": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\OnlineNetBankingWebAPI\\OnlineNetBankingWebAPI.csproj",
+        "packagesPath": "C:\\Users\\vishwas.ranjan\\.nuget\\packages\\",
+        "outputPath": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\OnlineNetBankingWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kritika.kashyap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vishwas.ranjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\OnlineNetBankingWebAPI\\OnlineNetBankingWebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\OnlineNetBankingWebAPI\\OnlineNetBankingWebAPI.csproj",
+        "projectName": "OnlineNetBankingWebAPI",
+        "projectPath": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\OnlineNetBankingWebAPI\\OnlineNetBankingWebAPI.csproj",
+        "packagesPath": "C:\\Users\\susree.sadangi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\OnlineNetBankingWebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\susree.sadangi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> ea185529ff0e3d346cbb78b73b24ac3f9a55184f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,8 +136,13 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\dotNet\\mvc\\Capstone_Project\\BankDBFirstLib\\BankDBFirstLib.csproj": {
-                "projectPath": "C:\\dotNet\\mvc\\Capstone_Project\\BankDBFirstLib\\BankDBFirstLib.csproj"
+<<<<<<< HEAD
+              "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj": {
+                "projectPath": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj"
+=======
+              "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj": {
+                "projectPath": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj"
+>>>>>>> ea185529ff0e3d346cbb78b73b24ac3f9a55184f
               }
             }
           }

@@ -12,6 +12,7 @@ import  Login  from "./LoginPage";
 import { Dashboard } from "./Dashboard";
 import './RouteComponent.css';
 import { CardApply } from "./CardApply";
+import { AddUserNetBanking } from "./AddUserNetBanking";
 
 
 export class RouteComponent extends Component{
@@ -52,7 +53,8 @@ export class RouteComponent extends Component{
                     
                 </div>
                     <Routes>
-                        
+
+                        <Route path="/add-user-net-banking" exact element={<AddUserNetBanking/>}/>
                         <Route path="/" element={<Login />}/>
                         <Route path="/add-customer" exact element={<AddCustomer/>}/>
                         <Route path="/all-users" exact element={<AllUsers/>}/>

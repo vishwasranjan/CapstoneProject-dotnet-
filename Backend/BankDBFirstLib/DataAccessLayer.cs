@@ -104,7 +104,7 @@ namespace BankDBFirstLib
 
         public userDetail GetUser(int id)
         {
-            return dbCtx.userDetails.FirstOrDefault(u => u.CustomerId == id); 
+            return dbCtx.userDetails.Where(u => u.CustomerId == id).FirstOrDefault(); 
         }
 
         public int login(string username, string password)
@@ -314,5 +314,17 @@ namespace BankDBFirstLib
             var lstUser = dbCtx.Cardapply.ToList();
             return lstUser;
         }
+
+        public bool checkAcc(int custId)
+        {
+            var user = dbCtx.Account.Where(o => o.CustomerId == custId).SingleOrDefault();
+            if (user != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        
     }
 }

@@ -8,7 +8,8 @@ export const TransactionList=({transaction})=> {
 
                 <div className="transaction-container">
                     <div class="row">
-                        <div class="col">{transaction.transaction_ID}</div>
+                        <div class="col">{transaction.customer_id}</div>
+                        <div class="col">{transaction.transaction_id}</div>
                         <div class="col">{transaction.transactionType}</div>
                         <div class="col">{transaction.transaction_amount}</div>
                         <div class="col">{transaction.transaction_time}</div>

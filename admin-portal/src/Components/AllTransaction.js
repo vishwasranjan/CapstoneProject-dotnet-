@@ -5,7 +5,8 @@ import { TransactionList } from "./TransactionListView";
 export class AllTransaction extends Component {
     state = {
         transaction:[{
-            "transaction_ID": 0,
+            "customer_id":"0",
+            "transaction_id":"0",
             "transactionType": "",
             "transaction_amount": 0,
             "transaction_time": "",
@@ -18,7 +19,7 @@ export class AllTransaction extends Component {
         super();
        
 
-        fetch("http://localhost:5050/User/TransactionDetails")
+        fetch("http://localhost:5293/User/GetAllTransactions")
             .then(response => response.json())
             .then(data => {
                 console.log('data:', data);
@@ -40,6 +41,9 @@ export class AllTransaction extends Component {
             <div className="containert">
                 <div className="transaction-container-thead">
                     <div class="row">
+                        <div class="col">
+                        Customer ID
+                        </div>
                         <div class="col">
                         Transaction ID
                         </div>

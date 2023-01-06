@@ -2,7 +2,7 @@ import React from "react";
 import './Loan.css';
 export const ActiveOffersList=({activeoffers})=>{
     const DeleteOffers=()=>{
-        fetch("http://localhost:5050/User/DeleteOffersbyID?offerid="+activeoffers.id,
+        fetch("http://localhost:5293/User/DeleteOffersbyID?offerid="+activeoffers.id,
                 {
                         method:"DELETE",
                         headers:{

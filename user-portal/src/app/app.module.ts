@@ -25,6 +25,10 @@ import { HlApplynowComponent } from './Component/hl-applynow/hl-applynow.compone
 import { NavbarComponent } from './Component/navbar/navbar.component';
 import { OnlineAssistComponent } from './Component/online-assist/online-assist.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ChatComponent } from './Component/chat/chat.component';
+import { ChatbotModelComponent } from './Component/chatbot-model/chatbot-model.component';
+import { EmailServiceComponent } from './Component/email-service/email-service.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +48,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TransactionDetailsComponent,
     DebitCardComponent,
     HlApplynowComponent,
-    NavbarComponent
+    NavbarComponent,
+    ChatComponent,
+    ChatbotModelComponent,
+    EmailServiceComponent,
   ],
   imports: [
     BrowserModule,
