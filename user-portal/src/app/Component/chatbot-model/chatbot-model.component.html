@@ -1,0 +1,19 @@
+<div style="position: fixed;right: 15px;bottom: 10px;">
+    <button  class="btn btn-lg btn-inline-success" (click)="open(mymodal)"><img src="https://cdn-icons-png.flaticon.com/512/6231/6231457.png" /></button>
+    <!-- <img src="assets\Images\chat.png" (click)="open(mymodal)" /> -->
+
+</div>
+   
+<ng-template #mymodal let-modal>
+  <div class="modal-header" style="background-color: #3064a7">
+    <h4 class="modal-title" id="modal-basic-title" >Chat Bot</h4>
+    <button type="button" style="background-color: #86a2c6" class="btn btn-outline-dark" (click)="modal.close('Save click')">Close</button>
+
+
+  </div>
+  <div class="modal-body">
+    <app-chat></app-chat>
+    
+  </div>
+ 
+</ng-template>
