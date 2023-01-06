@@ -1,3 +1,6 @@
+.container{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJPNlybXT7uj4Hi76iZcZdzofxnV0rBoAQfA&usqp=CAU");
+}
 .add-offer-box{
     padding: 10px;
     border-style: solid;
@@ -5,6 +8,10 @@
     font-family:'Times New Roman', Times, serif;
     margin-left: 50px;
     margin-right: 50px;
+    border-radius: 10px;
+    background-color: rgb(220, 217, 217, 0.5);
+    text-align: center;
+    backdrop-filter: blur(14px);
     
 }
 .add-offer-box div{
@@ -21,7 +28,20 @@
     margin-left: 40px;
     margin-right: 40px;
 }
-h4{
+h3{
     position: relative;
-    left: 50px;
+    left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: blue;
+}
+h4{
+    color:darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.row{
+    padding-left: 250px;
 }
