@@ -293,6 +293,47 @@ namespace OnlineNetBankingWebAPI.Controllers
 
 
 
+        [HttpGet]
+        [Route("GetLoanDeatils")]
+        public IEnumerable<loan> GetLoanDeatils()
+        {
+            return _dal.GetLoanDetails();
+
+        }
+
+        [HttpGet]
+        [Route("LoanStatus")]
+        public Boolean GetLoanStatus(int loanID)
+        {
+            return _dal.GetLoanStatus(loanID);
+        }
+        [HttpPut]
+        [Route("ApproveLoan")]
+        public void ApproveLoan(int lid)
+        {
+            _dal.ApproveLoan(lid);
+        }
+
+        [HttpPut]
+        [Route("RejectLoan")]
+        public void RejectLoan(int lid)
+        {
+            _dal.RejectLoan(lid);
+        }
+
+        [HttpDelete]
+        [Route("DeleteLoan")]
+        public void DeleteLoanDetails(int lid)
+        {
+            _dal.DeleteLoanDetails(lid);
+        }
+
+        [HttpGet]
+        [Route("GetAllApprovedLoans")]
+        public List<loan> ApprovedLoans()
+        {
+            return _dal.ApprovedLoans();
+        }
 
 
 

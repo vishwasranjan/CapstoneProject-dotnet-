@@ -18,7 +18,7 @@ export class ApprovedLoans extends Component{
         super();
        
 
-        fetch("http://localhost:5050/User/GetAllApprovedLoans")
+        fetch("http://localhost:5293/User/GetAllApprovedLoans")
             .then(response => response.json())
             .then(data => {
                 console.log('data:', data);

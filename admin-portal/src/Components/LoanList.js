@@ -8,7 +8,7 @@ export const LoanList=({loaninfo})=>{
     var nav;
     const ApproveLoan=()=>{
         
-        fetch("http://localhost:5050/User/LoanStatus?loanID="+loaninfo.loanId)
+        fetch("http://localhost:5293/User/LoanStatus?loanID="+loaninfo.loanId)
             .then(response => response.json())
             .then(data => {
                 nav=data;
@@ -17,7 +17,7 @@ export const LoanList=({loaninfo})=>{
                 if(nav="false")
                 {
                     console.log("Indsie if----------Appprove");
-                    fetch("http://localhost:5050/User/ApproveLoan?lid="+loaninfo.loanId,
+                    fetch("http://localhost:5293/User/ApproveLoan?lid="+loaninfo.loanId,
                     {
                         method:"PUT",
                         headers:{
@@ -46,7 +46,7 @@ export const LoanList=({loaninfo})=>{
     const DeclineLoan=()=>{
         
 
-        fetch("http://localhost:5050/User/LoanStatus?loanID="+loaninfo.loanId)
+        fetch("http://localhost:5293/User/LoanStatus?loanID="+loaninfo.loanId)
             .then(response => response.json())
             .then(data => {
                 nav=data;
@@ -56,7 +56,7 @@ export const LoanList=({loaninfo})=>{
                 if(nav="true")
                 {
                     console.log("Indise if----------Decline");
-                    fetch("http://localhost:5050/User/RejectLoan?lid="+loaninfo.loanId,
+                    fetch("http://localhost:5293/User/RejectLoan?lid="+loaninfo.loanId,
                     {
                         method:"PUT",
                         headers:{
@@ -64,7 +64,7 @@ export const LoanList=({loaninfo})=>{
                         }
                     });
 
-                    fetch("http://localhost:5050/User/DeleteLoan?lid="+loaninfo.loanId,
+                    fetch("http://localhost:5293/User/DeleteLoan?lid="+loaninfo.loanId,
                     {
                         method:"DELETE",
                         headers:{
@@ -88,11 +88,14 @@ export const LoanList=({loaninfo})=>{
             <div className="loant">
                 <div className="loan-list">
                     <div class="row">
-                        <div className="col-md-2">{loaninfo.loanId}</div>
+                        <div className="col-md-1">{loaninfo.loanId}</div>
                         <div className="col-md-2">{loaninfo.loanType}</div>
-                        <div className="col-md-2">{loaninfo.noOfYears}</div>
-                        <div className="col-md-2">{loaninfo.amount}</div>
+                        <div className="col-md-1">{loaninfo.noOfYears}</div>
+                        <div className="col-md-1">{loaninfo.amount}</div>
                         <div className="col-md-2">{loaninfo.customerId}</div>
+                        <div className="col-md-1">{loaninfo.iTdocument1}</div>
+                        <div className="col-md-1">{loaninfo.iTdocument2}</div>
+                        <div className="col-md-1">{loaninfo.bSdocument}</div>
                         <div className="col-md-1">
                             <Popup trigger={<button> Approve</button>} position="right center">
                                 <div>

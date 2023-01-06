@@ -14,13 +14,16 @@ export class Loans extends Component{
         "amount": 0,
         "customerId": 0,
         "loanStatus": null,
+        "iTdocument1": "0",
+        "iTdocument2": "0",
+        "bSdocument": "0",
         "customer": null
     }]
 };
     constructor(){
         super();
 
-        fetch("http://localhost:5050/User/GetLoanDeatils")
+        fetch("http://localhost:5293/User/GetLoanDeatils")
             .then(response => response.json())
             .then(data => {
                 console.log('data'+data);
@@ -40,11 +43,14 @@ export class Loans extends Component{
                     <div className="Loan-head-container">
                         <div class="row">
                             
-                            <div className="col-md-2">Loan ID</div>
+                            <div className="col-md-1">Loan ID</div>
                             <div className="col-md-2">Loan Type</div>
-                            <div className="col-md-2">No of Years</div>
-                            <div className="col-md-2">Amount</div>
+                            <div className="col-md-1">Years</div>
+                            <div className="col-md-1">Amount</div>
                             <div className="col-md-2">Customer Id</div>
+                            <div className="col-md-1">Doc1</div>
+                            <div className="col-md-1">Doc2</div>
+                            <div className="col-md-1">Doc3</div>
                             <div className="col-md-2">Options</div>
                             
                         </div>

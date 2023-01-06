@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import { AllUserList } from "./AllUserList";
 import "./AllUsers.css"
 
@@ -38,7 +39,15 @@ export class AllUsers extends Component{
         console.log('firstname',this.state.user[0]);
         return(
             <div>
-                <h5>Total Customers :{this.state.user.length}</h5>
+                <div className="row">
+                    <div className="col"><h5>Total Customers :{this.state.user.length}</h5></div>
+                    <div className="col">
+                        <Link to="/dashboard-admin">
+                            <button className="btn btn-warning">Back</button>
+                        </Link>
+                        </div>
+                </div>
+                
                 <div className="user-head">
                     <div class="row">
                         <div class="col-md-3">Customer ID</div>

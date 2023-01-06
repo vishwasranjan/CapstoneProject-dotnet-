@@ -73,7 +73,7 @@ export class Offers extends Component {
     }
     render() {
         return (
-            <div class="container">
+            <div class="loan-container">
                 <h3>Please Fill The Below Details To Avail Offers</h3>
                 <div className="add-offer-box">
                     <div className="heading">
@@ -87,7 +87,7 @@ export class Offers extends Component {
                         <div className="col-md-1"><p>{this.state.err.title}</p></div>
                     </div>
 
-                    <div className="row">
+                    <div className="row offer-row">
                         <div className="col-md-2">Picture</div>
                         <div className="col-md-3"><input name="picture" value={this.state.picture} onChange={this.fHandler}></input></div>
                         <div className="col-md-1"><p>{this.state.err.picture}</p></div>

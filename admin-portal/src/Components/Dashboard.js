@@ -21,9 +21,9 @@ export class Dashboard extends Component {
                     <li className="list-group-item">
                             <Link className="nav-link" to="/add-user-net-banking">Add Net Banking</Link>
                         </li>
-                        <li className="list-group-item">
+                        {/* <li className="list-group-item">
                             <Link className="nav-link" to="/add-customer">Add Customer</Link>
-                        </li>
+                        </li> */}
                         <li className="list-group-item">
                             <Link className="nav-link" to="/all-users">All Customers</Link>
                         </li>
