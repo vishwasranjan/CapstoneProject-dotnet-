@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
+using System;
 
 namespace OnlineNetBankingWebAPI.Controllers
 {
@@ -21,6 +22,7 @@ namespace OnlineNetBankingWebAPI.Controllers
         }
 
         [HttpGet]
+        [Route("getallUsers")]
         public IEnumerable<userDetail> GetAllUser()
         {
             //Get all the users
@@ -118,7 +120,7 @@ namespace OnlineNetBankingWebAPI.Controllers
 
         [HttpGet]
         [Route("getUserByAcc")]
-        public userDetail getUserById(string acc)
+        public userDetail getUserByAccount(string acc)
         {
             return _dal.getUserByAcc(acc);
         }
@@ -228,6 +230,13 @@ namespace OnlineNetBankingWebAPI.Controllers
             return _dal.AdminLogin(id, password);
         }
 
+        [HttpGet]
+        [Route("checkAcc")]
+        public bool ChkAcc(int custId)
+        {
+            return _dal.checkAcc(custId);
+        }
+
 
 
 
@@ -260,6 +269,30 @@ namespace OnlineNetBankingWebAPI.Controllers
             }
             return Unauthorized();
         }
+
+        [HttpPost]
+        [Route("AddOffer")]
+        public void AddOffer(offers offers)
+        {
+            _dal.AddOffer(offers);
+        }
+
+        [HttpGet]
+        [Route("ActiveOffers")]
+        public List<offers> ActiveOffers()
+        {
+            return _dal.ActiveOffers();
+        }
+
+        [HttpDelete]
+        [Route("DeleteOffersbyID")]
+        public void DeleteOffers(int offerid)
+        {
+            _dal.DeleteOffers(offerid);
+        }
+
+
+
     }
 
     

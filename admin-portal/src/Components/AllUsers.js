@@ -25,7 +25,7 @@ export class AllUsers extends Component{
     
     constructor(){
         super();
-        fetch("http://localhost:5050/User/GetAllUsers")
+        fetch("http://localhost:5293/User/getallUsers")
             .then(response => response.json())
             .then(data => {
                 console.log('data:', data);

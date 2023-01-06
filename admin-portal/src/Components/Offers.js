@@ -4,29 +4,26 @@ import './Offers.css';
 
 export class Offers extends Component{
     state={
-            "id": "",
             "title": "",
             "descript": "",
             "picture": "",
             err:{
-                "id": "",
                 "title": "",
                 "descript": "",
                 "picture": "",
             }
     }
     postOffers(event){
-        const id=this.state.id;
         const title=this.state.title;
         const descript=this.state.descript;
         const picture=this.state.picture;
 
-        const offer={id,title,descript,picture};
+        const offer={title,descript,picture};
         let{err}=this.state;
 
         if(this.validateForm(err)){
            
-            fetch("http://localhost:5050/User/AddOffers",{
+            fetch("http://localhost:5293/User/AddOffer",{
             method:"POST",
             body:JSON.stringify(offer),
             headers:{
@@ -65,10 +62,7 @@ export class Offers extends Component{
 
         switch(name)
         {
-            case 'id':
-                if(value.length===0){err.id='Offer ID is required';}
-                else{err.id='';}
-                break;
+            
             case 'title':
                 if(value.length==0){err.title='Required'}
                 else{err.title='';}
@@ -95,11 +89,6 @@ export class Offers extends Component{
                     <h6>Add Offer</h6><hr/>
                     </div>
                     
-                    <div className="row">
-                        <div className="col-md-1"><label>Offer Id</label></div>
-                        <div className="col-md-3"><input name="id" value={this.state.id} onChange={(e)=>this.fHandler(e)}></input></div>
-                        <div className="col-md-1"><p>{this.state.err.id}</p></div>
-                    </div>
                     <div className="row">
                         <div className="col-md-1">Title</div>
                         <div className="col-md-3"><input name="title" value={this.state.title} onChange={this.fHandler}></input></div>

@@ -68,10 +68,14 @@ namespace BankDBFirstLib
         void DeleteOffers(int offerid);
         List<Cardapply> ShowCardApply();
 
+
+        bool checkAcc(int custId);
+
+
+
+
+        //aDMIN SIDE FUNCTIONS
         
-
-
-
 
 
 

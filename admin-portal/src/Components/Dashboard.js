@@ -18,6 +18,9 @@ export class Dashboard extends Component {
                 <div className="row">
                 <div className="col-md-3">
                     <ul className="list-group">
+                    <li className="list-group-item">
+                            <Link className="nav-link" to="/add-user-net-banking">Add Net Banking</Link>
+                        </li>
                         <li className="list-group-item">
                             <Link className="nav-link" to="/add-customer">Add Customer</Link>
                         </li>
