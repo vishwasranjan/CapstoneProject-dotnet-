@@ -7,8 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BankDBFirstLib
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Vishwas\Capstone Project\Capstone Project 2\CapstoneStoneProjectFailure\CapstoneProject-dotnet-\Backend\BankDBFirstLib\
-=======
-build_property.ProjectDir = C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\
->>>>>>> ea185529ff0e3d346cbb78b73b24ac3f9a55184f

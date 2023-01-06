@@ -2034,16 +2034,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\vishwas.ranjan\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\susree.sadangi\\.nuget\\packages\\": {}
->>>>>>> ea185529ff0e3d346cbb78b73b24ac3f9a55184f
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
       "projectName": "BankDBFirstLib",
       "projectPath": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
@@ -2052,16 +2047,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vishwas.ranjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
-      "projectName": "BankDBFirstLib",
-      "projectPath": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
-      "packagesPath": "C:\\Users\\susree.sadangi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\susree.sadangi\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> ea185529ff0e3d346cbb78b73b24ac3f9a55184f
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
