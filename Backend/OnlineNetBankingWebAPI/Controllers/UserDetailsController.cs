@@ -2,6 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using OnlineNetBankingWebAPI.Models;
 using BankDBFirstLib;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
 
 namespace OnlineNetBankingWebAPI.Controllers
 {
@@ -216,7 +219,47 @@ namespace OnlineNetBankingWebAPI.Controllers
         public IEnumerable<Cardapply> ShowCardApply()
         {
             return _dal.ShowCardApply();
-    }
+        }
+
+        [HttpGet]
+        [Route("AdminLogin")]
+        public bool AdminLogin(int id, string password)
+        {
+            return _dal.AdminLogin(id, password);
+        }
+
+
+
+
+        [HttpPost]
+        [Route("LoginByToken")]
+        public IActionResult LoginByToken(int id, string password)
+        {
+            var admin = _dal.GetAdminById(id);
+            if (id == admin.Admin_id && password == admin.Admin_password)
+            {
+                //return OK with token
+                var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ByYM000OLlMQG6VVVp1OH7Xzyr7gHuw1qvUC5dcGt3SNM"));
+
+                var token = new JwtSecurityToken(
+                issuer: "cosmopolitian",
+                audience: "cosmopolitian",
+                expires: DateTime.Now.AddHours(3),
+                                   //claims: new List<Claim> { new Claim("t1", "v1"), new Claim("t2", "v2") },
+                                   signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
+                );
+
+
+                return Ok(new
+                {
+                    token = new JwtSecurityTokenHandler().WriteToken(token),
+                    expiration = token.ValidTo
+                });
+
+
+            }
+            return Unauthorized();
+        }
     }
 
     

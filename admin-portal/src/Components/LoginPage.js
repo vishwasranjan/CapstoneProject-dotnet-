@@ -43,16 +43,17 @@ const Login = (props) => {
         //console.log("id="+id+" password="+pass);
         //console.log(this.state.id);
         //http://localhost:5050/User/LoginByToken?id=123&password=vishwas
-        fetch("http://localhost:5050/User/LoginByToken?id=" +admin.id+"&password="+admin.password, {
-            method: 'POST',
+        fetch("http://localhost:5293/User/AdminLogin?id="+admin.id+"&password="+admin.password, {
+            method: 'GET',
         })
             //.then(response=>response.json())
             .then((res) => res.json()).then((data)=>{
                 console.log('data:',data);
 
-                if(data.status!=401){
-                    localStorage.setItem('token',data);
+                if(data){
+                    //localStorage.setItem('token',data);
                     //props.fn();
+                    console.log('inside if');
                     navigate('/dashboard-admin');
                 }    
                // navigate('/dashboard-admin');
