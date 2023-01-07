@@ -32,9 +32,6 @@ export class Offers extends Component {
                 }
             }
             )
-<<<<<<< HEAD
-            
-=======
             .then(response=>{response.json();
                 if(response.ok)
                 {
@@ -45,7 +42,6 @@ export class Offers extends Component {
                 }
                 }
                 )
->>>>>>> d1ad7f41c3d8a7bc266f1cb618a6e13e23534297
 
 
 
