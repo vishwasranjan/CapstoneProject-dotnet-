@@ -21,6 +21,31 @@ import { NavbarComponent } from './Component/navbar/navbar.component';
 import { ChatComponent } from './Component/chat/chat.component';
 import { ChatbotModelComponent } from './Component/chatbot-model/chatbot-model.component';
 import { EmailServiceComponent } from './Component/email-service/email-service.component';
+import { ChequebookRequestComponent } from './Component/chequebook-request/chequebook-request.component';
+import { FeedbackFormComponent } from './Component/feedback-form/feedback-form.component';
+import { HelpComponent } from './Component/help/help.component';
+import { AboutUsComponent } from './Component/about-us/about-us.component';
+import { VlApplynowComponent } from './Component/vl-applynow/vl-applynow.component';
+import { VlDeclarationComponent } from './Component/vl-declaration/vl-declaration.component';
+import { VlEmiOptionsComponent } from './Component/vl-emi-options/vl-emi-options.component';
+import { EmiOptionsComponent } from './Component/emi-options/emi-options.component';
+import { SuccessHomeloanComponent } from './Component/success-homeloan/success-homeloan.component';
+import { SuccessVehicleloanComponent } from './Component/success-vehicleloan/success-vehicleloan.component';
+import { DeclarationComponent } from './Component/declaration/declaration.component';
+import { ProfileReadyComponent } from './Component/profile-ready/profile-ready.component';
+import { Pdcheck3Component } from './Component/pdcheck3/pdcheck3.component';
+import { Pdcheck2Component } from './Component/pdcheck2/pdcheck2.component';
+import { EmploymentDetailsComponent } from './Component/employment-details/employment-details.component';
+import { Pdcheck1Component } from './Component/pdcheck1/pdcheck1.component';
+import { PersonalDetailsComponent } from './Component/personal-details/personal-details.component';
+import { Proceed1Component } from './Component/proceed1/proceed1.component';
+import { ProceedInbetweenComponent } from './Component/proceed-inbetween/proceed-inbetween.component';
+import { ProceedComponent } from './Component/proceed/proceed.component';
+import { IncomeTaxReturnComponent } from './Component/income-tax-return/income-tax-return.component';
+import { BankStatementComponent } from './Component/bank-statement/bank-statement.component';
+import { ContactInformationComponent } from './Component/contact-information/contact-information.component';
+import { BasicInformationComponent } from './Component/basic-information/basic-information.component';
+import { HomeLoanComponent } from './Component/home-loan/home-loan.component';
 const routes: Routes=[
    
   {
@@ -82,7 +107,7 @@ const routes: Routes=[
   },
 
   {
-    path:'home-loan', component: HlApplynowComponent,
+    path:'hl-applynow', component: HlApplynowComponent,
     canActivate: [AuthGuardGuard]
   },
   {
@@ -100,8 +125,82 @@ const routes: Routes=[
   },
   {
     path:'email-service', component: EmailServiceComponent
-  }
-
+  },
+  {
+    path:'chequebook-request', component: ChequebookRequestComponent
+   },
+   {
+    path:'feedback-form', component: FeedbackFormComponent
+   },
+   {
+    path:'help', component: HelpComponent
+   },
+   {
+    path:'about-us', component: AboutUsComponent
+   },
+   {
+    path:'vl-applynow', component: VlApplynowComponent
+   },
+   {
+    path:'vl-declaration', component: VlDeclarationComponent
+   },
+   {
+    path:'vl-emi-options', component: VlEmiOptionsComponent
+   },
+   {
+    path:'success-vehicleloan', component: SuccessVehicleloanComponent
+   },
+   {
+    path:'success-homeloan', component: SuccessHomeloanComponent
+   },
+   {
+    path:'emi-options', component: EmiOptionsComponent
+   },
+   {
+    path:'bank-statement', component: BankStatementComponent
+   },
+   {
+    path:'income-tax-return', component: IncomeTaxReturnComponent
+   },
+   {
+    path:'proceed', component: ProceedComponent
+   },
+   {
+    path:'proceed-inbetween', component: ProceedInbetweenComponent
+   },
+   {
+    path:'proceed1', component: Proceed1Component
+   },
+   {
+    path:'personal-details', component: PersonalDetailsComponent
+   },
+   {
+    path:'basic-information', component: BasicInformationComponent
+   },
+   {
+    path:'pdcheck1', component: Pdcheck1Component
+   },
+   {
+    path:'employment-details', component: EmploymentDetailsComponent
+   },
+   {
+    path:'pdcheck2', component: Pdcheck2Component
+   },
+   {
+    path:'contact-information', component: ContactInformationComponent
+   },
+   {
+    path:'pdcheck3', component: Pdcheck3Component
+   },
+   {
+    path:'profile-ready', component: ProfileReadyComponent
+   },
+   {
+    path:'declaration', component: DeclarationComponent
+   },
+   {
+    path:'home-loan', component: HomeLoanComponent
+   }
  
 ]
 
