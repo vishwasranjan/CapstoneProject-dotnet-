@@ -230,12 +230,12 @@ namespace OnlineNetBankingWebAPI.Controllers
             return _dal.AdminLogin(id, password);
         }
 
-        [HttpGet]
-        [Route("checkAcc")]
-        public bool ChkAcc(int custId)
-        {
-            return _dal.checkAcc(custId);
-        }
+        //[HttpGet]
+        //[Route("checkAcc")]
+        //public bool ChkAcc(int custId)
+        //{
+        //    return _dal.checkAcc(custId);
+        //}
 
 
 
@@ -333,6 +333,21 @@ namespace OnlineNetBankingWebAPI.Controllers
         public List<loan> ApprovedLoans()
         {
             return _dal.ApprovedLoans();
+        }
+
+        [HttpGet]
+        [Route("CheckExistingUser")]
+        public int CheckExistingUser(int custid)
+        {
+            return _dal.CheckExistingUser(custid);
+        }
+
+
+        [HttpPost]
+        [Route("AddUserCredentials")]
+        public void AddUserCredentials(user_login user_Login)
+        {
+            _dal.AddUserLogin(user_Login);
         }
 
 
