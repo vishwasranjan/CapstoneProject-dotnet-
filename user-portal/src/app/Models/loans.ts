@@ -5,8 +5,8 @@ export class Loans {
     amount: number = 0;
     noOfYears : number = 0;
     
-​
-    constructor(loanId:number,customerid:number, loantype:string, loanamount:number, noOfYears:number){
+    
+​    constructor(loanId:number,customerid:number, loantype:string, loanamount:number, noOfYears:number){
         this.loanId  = loanId;
         this.customerId=customerid;
         this.loanType=loantype;

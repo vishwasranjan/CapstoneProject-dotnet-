@@ -26,7 +26,7 @@ export class HomeLoanComponent implements OnInit {
   }
   proceed(){
     if(this.onClick()){
-      this.router.navigate(["proceed"])
+      this.router.navigate(["hl-applynow"])
     }
   }
 

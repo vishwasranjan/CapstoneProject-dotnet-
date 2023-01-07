@@ -31,6 +31,11 @@ import { ChatComponent } from './Component/chat/chat.component';
 import { ChatbotModelComponent } from './Component/chatbot-model/chatbot-model.component';
 import { EmailServiceComponent } from './Component/email-service/email-service.component';
 import { TransferToPayeeComponent } from './Component/transfer-to-payee/transfer-to-payee.component';
+import { HelpComponent } from './Component/help/help.component';
+import { AboutUsComponent } from './Component/about-us/about-us.component';
+import { FeedbackFormComponent } from './Component/feedback-form/feedback-form.component';
+import { ChequebookRequestComponent } from './Component/chequebook-request/chequebook-request.component';
+import { HomeLoanComponent } from './Component/home-loan/home-loan.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +60,12 @@ import { TransferToPayeeComponent } from './Component/transfer-to-payee/transfer
     ChatComponent,
     ChatbotModelComponent,
     EmailServiceComponent,
-    TransferToPayeeComponent
+    TransferToPayeeComponent,
+    HelpComponent,
+    AboutUsComponent,
+    FeedbackFormComponent,
+    ChequebookRequestComponent,
+    HomeLoanComponent
   ],
   imports: [
     BrowserModule,
