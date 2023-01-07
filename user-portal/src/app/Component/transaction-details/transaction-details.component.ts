@@ -26,5 +26,8 @@ this.userService.getUserTransactions(this.user.value.id).subscribe(data=>{this.a
 console.log(this.allTransactions)
 });
   }
-
+download()
+{
+  window.print();
+}
 }

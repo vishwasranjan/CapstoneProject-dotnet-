@@ -13,17 +13,21 @@
 <br/>
     <div *ngFor="let p of payees;let i=index">
      <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
             {{p.payeeId}}
 
         </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         {{u[i].firstName}}
 </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
                {{p.payee_acc_no}}
   
           </div>
+          <div class="col-md-3">
+          <button (click)="transfer(p.payeeId, u[i].firstName, p.payee_acc_no)" class="btn btn-primary">initiate transfer</button>
+          </div>
     <hr/>
+
     </div>
 </div>
