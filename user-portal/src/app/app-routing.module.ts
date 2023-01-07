@@ -26,6 +26,7 @@ import { AboutUsComponent } from './Component/about-us/about-us.component';
 import { HelpComponent } from './Component/help/help.component';
 import { FeedbackFormComponent } from './Component/feedback-form/feedback-form.component';
 import { ChequebookRequestComponent } from './Component/chequebook-request/chequebook-request.component';
+import { HomeLoanComponent } from './Component/home-loan/home-loan.component';
 const routes: Routes=[
    
   {
@@ -120,6 +121,9 @@ const routes: Routes=[
   },
   {
     path:'chequebook-request', component: ChequebookRequestComponent
+  },
+  {
+    path:'home-loan', component: HomeLoanComponent
   }
 ]
 

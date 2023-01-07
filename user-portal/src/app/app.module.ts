@@ -35,6 +35,7 @@ import { HelpComponent } from './Component/help/help.component';
 import { AboutUsComponent } from './Component/about-us/about-us.component';
 import { FeedbackFormComponent } from './Component/feedback-form/feedback-form.component';
 import { ChequebookRequestComponent } from './Component/chequebook-request/chequebook-request.component';
+import { HomeLoanComponent } from './Component/home-loan/home-loan.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { ChequebookRequestComponent } from './Component/chequebook-request/chequ
     HelpComponent,
     AboutUsComponent,
     FeedbackFormComponent,
-    ChequebookRequestComponent
+    ChequebookRequestComponent,
+    HomeLoanComponent
   ],
   imports: [
     BrowserModule,
