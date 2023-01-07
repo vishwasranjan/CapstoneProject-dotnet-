@@ -335,5 +335,7 @@ namespace BankDBFirstLib
             dbCtx.Add(user_Login);
             dbCtx.SaveChanges();
         }
+
+
     }
 }

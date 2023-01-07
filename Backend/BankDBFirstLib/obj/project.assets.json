@@ -2034,16 +2034,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\vishwas.ranjan\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\susree.sadangi\\.nuget\\packages\\": {}
->>>>>>> a29d80b9bae2f93d9ed164143cc4b3311c24754a
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
       "projectName": "BankDBFirstLib",
       "projectPath": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
@@ -2052,16 +2047,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vishwas.ranjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
-      "projectName": "BankDBFirstLib",
-      "projectPath": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
-      "packagesPath": "C:\\Users\\susree.sadangi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\susree.sadangi\\Training\\BankingPortalCapstone\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\susree.sadangi\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> a29d80b9bae2f93d9ed164143cc4b3311c24754a
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2127,13 +2112,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
