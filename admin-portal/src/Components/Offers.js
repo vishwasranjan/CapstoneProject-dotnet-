@@ -1,5 +1,6 @@
 import { Alert } from "bootstrap";
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import './Offers.css';
 
 export class Offers extends Component {
@@ -74,6 +75,11 @@ export class Offers extends Component {
     render() {
         return (
             <div class="loan-container">
+                <div className="button">
+                    <Link to="/dashboard-admin">
+                        <button className="btn"><i class="fa fa-close"></i></button>
+                    </Link>
+                </div>
                 <h3>Please Fill The Below Details To Avail Offers</h3>
                 <div className="add-offer-box">
                     <div className="heading">

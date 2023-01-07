@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { ApprovedLoansList } from "./ApprovedLoansList";
 import './Loan.css';
 export class ApprovedLoans extends Component{
@@ -31,6 +32,11 @@ export class ApprovedLoans extends Component{
     render(){
         return(
             <div>
+                <div className="button">
+                    <Link to="/dashboard-admin">
+                        <button className="btn"><i class="fa fa-close"></i></button>
+                    </Link>
+                </div>
                 <form>
                     <div className="Loan-head-container">
                         <div class="row">

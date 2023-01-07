@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { AllUserList } from "./AllUserList";
 import "./AllUsers.css"
 
-export class AllUsers extends Component{
-    state={
-        user:[{
-            "customerId":0,
+export class AllUsers extends Component {
+    state = {
+        user: [{
+            "customerId": 0,
             "firstName": "",
             "middleName": "",
             "lastName": "",
@@ -23,31 +23,33 @@ export class AllUsers extends Component{
             "payees": []
         }]
     };
-    
-    constructor(){
+
+    constructor() {
         super();
         fetch("http://localhost:5293/User/getallUsers")
             .then(response => response.json())
             .then(data => {
                 console.log('data:', data);
-                this.setState({user:data });
+                this.setState({ user: data });
             });
     }
 
 
-    render(){
-        console.log('firstname',this.state.user[0]);
-        return(
+    render() {
+        console.log('firstname', this.state.user[0]);
+        return (
             <div>
+                
+                <div className="button">
+                    <Link to="/dashboard-admin">
+                        <button className="btn"><i class="fa fa-close"></i></button>
+                    </Link>
+                </div>
+
                 <div className="row">
                     <div className="col"><h5>Total Customers :{this.state.user.length}</h5></div>
-                    <div className="col">
-                        <Link to="/dashboard-admin">
-                            <button className="btn btn-warning">Back</button>
-                        </Link>
-                        </div>
                 </div>
-                
+
                 <div className="user-head">
                     <div class="row">
                         <div class="col-md-3">Customer ID</div>
@@ -76,10 +78,10 @@ export class AllUsers extends Component{
                         <div class="col">PIN</div>
                         <div class="col">Gender</div>
                     </div> */}
-                        
+
                     {/* <p>{this.state.user[0].customerId}</p> */}
                 </div>
-                {this.state.user.map((c)=><AllUserList user={c}></AllUserList>)}
+                {this.state.user.map((c) => <AllUserList user={c}></AllUserList>)}
             </div>
         )
     }

@@ -11,10 +11,21 @@ import { ActiveOffers } from "./ActiveOffers";
 import "./Dashboard.css"
 import Login from "./LoginPage";
 export class Dashboard extends Component {
+    logout(){
+        localStorage.removeItem('token');
+        //navigate to login
+    }
     render() {
         return (
             // <Router>
             <div className="dashboard-container">
+                <div className="logout">
+                    <Link to="/">
+                            <button onClick={()=>{this.logout()}} className="btn">
+                            <i class="fa fa-home"></i> Logout</button>
+                    </Link>
+                </div>
+                    
                 <div className="row">
                 <div className="col-md-3">
                     <ul className="list-group">

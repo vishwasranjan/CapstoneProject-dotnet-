@@ -3,6 +3,7 @@ import { Dashboard } from "./Dashboard";
 
 import './CardApply.css';
 import { CardApplyList } from "./CardApplyList";
+import { Link } from "react-router-dom";
 
 
 export class CardApply extends Component{
@@ -31,6 +32,12 @@ export class CardApply extends Component{
         console.log('state',this.state);
         return(
             <div className="row">
+
+                <div className="button">
+                    <Link to="/dashboard-admin">
+                        <button className="btn"><i class="fa fa-close"></i></button>
+                    </Link>
+                </div>
                     
     
                     
