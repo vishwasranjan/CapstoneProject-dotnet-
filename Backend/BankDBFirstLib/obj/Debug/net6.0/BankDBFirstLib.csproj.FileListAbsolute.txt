@@ -12,3 +12,17 @@ C:\Vishwas\Capstone Project\Capstone Project 2\CapstoneStoneProjectFailure\Capst
 C:\Vishwas\Capstone Project\Capstone Project 2\CapstoneStoneProjectFailure\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.pdb
 C:\Vishwas\Capstone Project\Capstone Project 2\CapstoneStoneProjectFailure\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.genruntimeconfig.cache
 C:\Vishwas\Capstone Project\Capstone Project 2\CapstoneStoneProjectFailure\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\ref\BankDBFirstLib.dll
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\bin\Debug\net6.0\BankDBFirstLib.deps.json
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\bin\Debug\net6.0\BankDBFirstLib.runtimeconfig.json
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\bin\Debug\net6.0\BankDBFirstLib.dll
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\bin\Debug\net6.0\BankDBFirstLib.pdb
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.csproj.AssemblyReference.cache
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.AssemblyInfoInputs.cache
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.AssemblyInfo.cs
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.csproj.CoreCompileInputs.cache
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.dll
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\refint\BankDBFirstLib.dll
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.pdb
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\BankDBFirstLib.genruntimeconfig.cache
+C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\BankDBFirstLib\obj\Debug\net6.0\ref\BankDBFirstLib.dll
