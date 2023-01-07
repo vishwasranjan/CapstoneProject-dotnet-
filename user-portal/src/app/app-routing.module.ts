@@ -21,6 +21,7 @@ import { NavbarComponent } from './Component/navbar/navbar.component';
 import { ChatComponent } from './Component/chat/chat.component';
 import { ChatbotModelComponent } from './Component/chatbot-model/chatbot-model.component';
 import { EmailServiceComponent } from './Component/email-service/email-service.component';
+import { TransferToPayeeComponent } from './Component/transfer-to-payee/transfer-to-payee.component';
 const routes: Routes=[
    
   {
@@ -82,7 +83,7 @@ const routes: Routes=[
   },
 
   {
-    path:'home-loan', component: HlApplynowComponent,
+    path:'hl-applynow', component: HlApplynowComponent,
     canActivate: [AuthGuardGuard]
   },
   {
@@ -100,6 +101,9 @@ const routes: Routes=[
   },
   {
     path:'email-service', component: EmailServiceComponent
+  },
+  {
+    path: 'transfer-to-payee', component: TransferToPayeeComponent
   }
 
  

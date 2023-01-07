@@ -1,0 +1,19 @@
+
+.container {
+    padding-top: 30px;
+    /* background-image: url("https://media.istockphoto.com/id/1091192542/photo/empty-wooden-table-and-window-room-interior-decoration-background-product-montage-display-can.jpg?b=1&s=170667a&w=0&k=20&c=6aUCRqVagBTF0HjfeffJsjxhVDJel75EdFaRmG_nZ-c="); */
+}
+.row{
+    padding: 2rem 0rem;
+}
+  
+  h3 {
+    margin: 2rem 0rem 1rem;
+    text-align: center;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .last{
+    text-align: center;
+  }
+  

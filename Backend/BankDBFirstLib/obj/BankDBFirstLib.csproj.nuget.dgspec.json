@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj": {}
+    "C:\\Users\\Kritika.kashyap\\Capstone3\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj": {}
   },
   "projects": {
-    "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj": {
+    "C:\\Users\\Kritika.kashyap\\Capstone3\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
+        "projectUniqueName": "C:\\Users\\Kritika.kashyap\\Capstone3\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
         "projectName": "BankDBFirstLib",
-        "projectPath": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
-        "packagesPath": "C:\\Users\\vishwas.ranjan\\.nuget\\packages\\",
-        "outputPath": "C:\\Vishwas\\Capstone Project\\Capstone Project 2\\CapstoneStoneProjectFailure\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\obj\\",
+        "projectPath": "C:\\Users\\Kritika.kashyap\\Capstone3\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\BankDBFirstLib.csproj",
+        "packagesPath": "C:\\Users\\Kritika.kashyap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kritika.kashyap\\Capstone3\\CapstoneProject-dotnet-\\Backend\\BankDBFirstLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vishwas.ranjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kritika.kashyap\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

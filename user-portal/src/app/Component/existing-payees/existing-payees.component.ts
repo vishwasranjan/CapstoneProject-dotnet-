@@ -3,6 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 import { UserServiceService } from 'src/app/Service/user-service.service';
 import { Payee } from 'src/app/Models/payee';
 import { User } from 'src/app/Models/user';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-existing-payees',
   templateUrl: './existing-payees.component.html',
@@ -13,7 +14,7 @@ export class ExistingPayeesComponent implements OnInit {
   payees: Payee[] = [];
   //names: string[] = [];
   u : User[] = [];
-  constructor(private userService: UserServiceService) {
+  constructor(private userService: UserServiceService, private router: Router) {
     this.userService.loadCurrentUser();
     this.sender = this.userService.currentUser;
     console.log("existing-payees: sender-id");
@@ -32,4 +33,16 @@ export class ExistingPayeesComponent implements OnInit {
   })
   }
 
+  transfer(id : number, name: string, payee_acc_no : string){
+    console.log("tranfered");
+    console.log(id);
+    this.userService.payeeId = id;
+    this.userService.payeeName = name;
+    this.userService.payeeAccNo = payee_acc_no;
+    this.router.navigate(['transfer-to-payee']);
+    
+  }
+
 }
+
+
