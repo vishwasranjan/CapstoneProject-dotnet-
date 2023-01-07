@@ -32,7 +32,20 @@ export class Offers extends Component {
                 }
             }
             )
+<<<<<<< HEAD
             
+=======
+            .then(response=>{response.json();
+                if(response.ok)
+                {
+                    alert("Offer Added Sucessfully")
+                }
+                else{
+                    alert("Already Existed")
+                }
+                }
+                )
+>>>>>>> d1ad7f41c3d8a7bc266f1cb618a6e13e23534297
 
 
 
