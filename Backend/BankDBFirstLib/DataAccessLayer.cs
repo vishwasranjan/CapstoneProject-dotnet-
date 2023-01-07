@@ -1,4 +1,24 @@
+<<<<<<< HEAD
 ﻿Loan
+=======
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Transactions;
+
+namespace BankDBFirstLib
+{
+
+    //comment
+    public class DataAccessLayer : IDatabase
+    {
+        private readonly BankDBContext dbCtx;
+        //dependency injection
+>>>>>>> e8e88316b02898cdd106a1ed36a105931c095f09
         public DataAccessLayer(BankDBContext dbCtx)
         {
             this.dbCtx = dbCtx;
