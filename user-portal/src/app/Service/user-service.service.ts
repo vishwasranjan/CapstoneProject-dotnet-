@@ -16,6 +16,9 @@ import { Loans } from '../Models/loans';
 export class UserServiceService {
   private apiUrl = "http://localhost:5293/";
    customer_id: any=0;
+   payeeName  = "";
+   payeeId = 0;
+   payeeAccNo = "";
    currentUser : BehaviorSubject<any> = new BehaviorSubject(null);
    c : Subject<number> = new Subject();
    jwtHelperService = new JwtHelperService();

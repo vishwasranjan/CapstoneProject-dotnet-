@@ -28,6 +28,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChatComponent } from './Component/chat/chat.component';
 import { ChatbotModelComponent } from './Component/chatbot-model/chatbot-model.component';
 import { EmailServiceComponent } from './Component/email-service/email-service.component';
+import { TransferToPayeeComponent } from './Component/transfer-to-payee/transfer-to-payee.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { EmailServiceComponent } from './Component/email-service/email-service.c
     ChatComponent,
     ChatbotModelComponent,
     EmailServiceComponent,
+    TransferToPayeeComponent
   ],
   imports: [
     BrowserModule,

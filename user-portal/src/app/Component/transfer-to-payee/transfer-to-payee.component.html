@@ -1,0 +1,23 @@
+ 
+ <br/>
+ <div class="container">
+    
+    <div class="c shadow p-3 mb-5 bg-white rounded">
+        <br/>
+        <h5>Paying {{name}}</h5>
+        <br/>
+ 
+ 
+<div>
+    <h5>Enter Amount</h5>
+    <br/>
+    <input type="number" name="amount" [(ngModel)] = "amount"/>
+    <br/> <br/>
+    <button [routerLink]="['/existing-payees']" class="btn btn-danger">Cancel</button> &nbsp;
+    <button (click)="transfer()" class="btn btn-primary">Submit</button> <br/>
+    <br/>
+    </div>
+</div>
+
+{{errmsg}}
+</div>
