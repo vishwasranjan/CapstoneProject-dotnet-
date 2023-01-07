@@ -1,0 +1,38 @@
+.container {
+    padding-top: 30px;
+    background-position: 100%;
+}
+
+h3 {
+    margin: 2rem 0rem 1rem;
+    text-align: center;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card {
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h5{
+    text-align: center;
+    color: mediumvioletred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration-line: underline;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* tr:nth-child(even) {
+    background-color: #dddddd;
+  } */

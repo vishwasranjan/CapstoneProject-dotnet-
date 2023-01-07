@@ -1,0 +1,26 @@
+.container {
+    padding-top: 30px;
+    background-position: 100%;
+}
+
+h3 {
+    margin: 2rem 0rem 1rem;
+    text-align: center;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h4 {
+    text-align: center;
+    color: darkslategrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card {
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.last{
+    padding-left: 80px;
+}

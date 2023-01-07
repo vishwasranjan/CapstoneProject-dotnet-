@@ -83,7 +83,7 @@ const routes: Routes=[
   },
 
   {
-    path:'home-loan', component: HlApplynowComponent,
+    path:'hl-applynow', component: HlApplynowComponent,
     canActivate: [AuthGuardGuard]
   },
   {
