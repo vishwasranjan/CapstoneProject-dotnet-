@@ -22,6 +22,10 @@ import { ChatComponent } from './Component/chat/chat.component';
 import { ChatbotModelComponent } from './Component/chatbot-model/chatbot-model.component';
 import { EmailServiceComponent } from './Component/email-service/email-service.component';
 import { TransferToPayeeComponent } from './Component/transfer-to-payee/transfer-to-payee.component';
+import { AboutUsComponent } from './Component/about-us/about-us.component';
+import { HelpComponent } from './Component/help/help.component';
+import { FeedbackFormComponent } from './Component/feedback-form/feedback-form.component';
+import { ChequebookRequestComponent } from './Component/chequebook-request/chequebook-request.component';
 const routes: Routes=[
    
   {
@@ -104,9 +108,19 @@ const routes: Routes=[
   },
   {
     path: 'transfer-to-payee', component: TransferToPayeeComponent
+  },
+  {
+    path:'help', component: HelpComponent
+  },
+  {
+    path:'about-us', component:AboutUsComponent
+  },
+  {
+    path:'feedback-form', component: FeedbackFormComponent
+  },
+  {
+    path:'chequebook-request', component: ChequebookRequestComponent
   }
-
- 
 ]
 
 

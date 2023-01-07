@@ -1,0 +1,15 @@
+h2{
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornflowerblue;
+    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );
+    width: 100%;
+    padding-bottom: 30px;
+}
+.upload{
+    padding-left: 60px;
+}
+h4{
+    color: blue;
+}
