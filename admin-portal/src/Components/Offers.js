@@ -32,6 +32,7 @@ export class Offers extends Component {
                 }
             }
             )
+            
 
 
 
