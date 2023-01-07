@@ -8,17 +8,9 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OnlineNetBankingWebAPI
 build_property.RootNamespace = OnlineNetBankingWebAPI
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\OnlineNetBankingWebAPI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\susree.sadangi\Training\BankingPortalCapstone\CapstoneProject-dotnet-\Backend\OnlineNetBankingWebAPI
-=======
-build_property.ProjectDir = C:\Vishwas\Capstone Project\Capstone Project 2\CapstoneStoneProjectFailure\CapstoneProject-dotnet-\Backend\OnlineNetBankingWebAPI\
-build_property.RazorLangVersion = 6.0
-build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Vishwas\Capstone Project\Capstone Project 2\CapstoneStoneProjectFailure\CapstoneProject-dotnet-\Backend\OnlineNetBankingWebAPI
->>>>>>> e8e88316b02898cdd106a1ed36a105931c095f09
 build_property._RazorSourceGeneratorDebug = 

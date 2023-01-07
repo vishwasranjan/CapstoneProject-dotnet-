@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-﻿Loan
-=======
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -18,7 +15,6 @@ namespace BankDBFirstLib
     {
         private readonly BankDBContext dbCtx;
         //dependency injection
->>>>>>> e8e88316b02898cdd106a1ed36a105931c095f09
         public DataAccessLayer(BankDBContext dbCtx)
         {
             this.dbCtx = dbCtx;
@@ -26,7 +22,7 @@ namespace BankDBFirstLib
 
         public void AddLoan(loan loan)
         {
-           dbCtx.Add(loan);
+            dbCtx.Add(loan);
             dbCtx.SaveChanges();
         }
 
@@ -56,14 +52,14 @@ namespace BankDBFirstLib
 
         public void DeleteOffer(int id)
         {
-            var offer = dbCtx.offers.Where(o=>o.Id== id).SingleOrDefault();
+            var offer = dbCtx.offers.Where(o => o.Id == id).SingleOrDefault();
             dbCtx.offers.Remove(offer);
             dbCtx.SaveChanges();
         }
 
         public void DeletePayee(int id)
         {
-            var payee = dbCtx.Payee.Where(o=>o.PayeeId== id).SingleOrDefault();
+            var payee = dbCtx.Payee.Where(o => o.PayeeId == id).SingleOrDefault();
             dbCtx.Payee.Remove(payee);
             dbCtx.SaveChanges();
         }
@@ -77,15 +73,15 @@ namespace BankDBFirstLib
         public List<userDetail> GetAllUsers()
         {
             //List<userDetail> users = new List<userDetail>();
-            var users= dbCtx.userDetails.ToList();
+            var users = dbCtx.userDetails.ToList();
             return users;
         }
 
         public userDetail getUserByAcc(string acc)
         {
-            var account  = dbCtx.Account.Where(o=>o.AccountNo== acc).SingleOrDefault();
+            var account = dbCtx.Account.Where(o => o.AccountNo == acc).SingleOrDefault();
             int? id = 0;
-             id = account.CustomerId;
+            id = account.CustomerId;
             return GetUser((int)id);
         }
 
@@ -110,12 +106,12 @@ namespace BankDBFirstLib
 
         public userDetail GetUser(int id)
         {
-            return dbCtx.userDetails.Where(u => u.CustomerId == id).FirstOrDefault(); 
+            return dbCtx.userDetails.Where(u => u.CustomerId == id).FirstOrDefault();
         }
 
         public int login(string username, string password)
         {
-            
+
             var user = dbCtx.User_login.FirstOrDefault(x => x.UserName == username && x.pswd == password);
             if (user != null)
                 return user.CustomerId;
@@ -123,24 +119,24 @@ namespace BankDBFirstLib
                 return 0;
         }
 
-        
+
 
         public void Tcredit(double amount, int customer_id)
         {
             var user = dbCtx.Account.Where(o => o.CustomerId == customer_id).SingleOrDefault();
             user.AccountBalance = user.AccountBalance + amount;
             dbCtx.SaveChanges();
-            
-             
+
+
         }
 
-       
+
 
         public bool Tdebit(double amount, int customer_id)
         {
             var user = dbCtx.Account.Where(o => o.CustomerId == customer_id).SingleOrDefault();
 
-            if(user.AccountBalance > amount)
+            if (user.AccountBalance > amount)
             {
                 user.AccountBalance = user.AccountBalance - amount;
                 dbCtx.SaveChanges();
@@ -189,12 +185,12 @@ namespace BankDBFirstLib
 
         public List<transactionDetails> GetTransactionDetails()
         {
-           return dbCtx.transactionDetails.ToList();
+            return dbCtx.transactionDetails.ToList();
         }
 
         public void AddTransaction(transactionDetails transactionDetails)
         {
-           dbCtx.Add(transactionDetails);
+            dbCtx.Add(transactionDetails);
             dbCtx.SaveChanges();
         }
 
@@ -331,6 +327,6 @@ namespace BankDBFirstLib
             return false;
         }
 
-        
+
     }
 }
