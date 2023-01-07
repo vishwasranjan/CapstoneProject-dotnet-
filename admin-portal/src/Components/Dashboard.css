@@ -37,3 +37,16 @@ img
 .list-group{
     margin-top:40px;
 }
+
+.logout{
+    text-align: right;
+}
+.logout button{
+    border-color: #213e65;
+    border-width: .5px;
+    margin-top: 3px;
+    margin-right: 5px; 
+}
+.logout button:hover{
+    color: red;
+}

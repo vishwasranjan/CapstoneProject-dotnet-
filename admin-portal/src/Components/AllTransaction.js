@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import "./AllTransaction.css"
 import { TransactionList } from "./TransactionListView";
 
@@ -39,6 +40,11 @@ export class AllTransaction extends Component {
         //http://localhost:5050/User/TransactionDetails
         return (
             <div className="containert">
+                <div className="button">
+                    <Link to="/dashboard-admin">
+                        <button className="btn"><i class="fa fa-close"></i></button>
+                    </Link>
+                </div>
                 <div className="transaction-container-thead">
                     <div class="row">
                         <div class="col">

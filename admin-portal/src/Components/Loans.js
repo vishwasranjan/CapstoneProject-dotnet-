@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import { Dashboard } from "./Dashboard";
 
 import './Loan.css';
@@ -38,13 +39,17 @@ export class Loans extends Component{
         return(
             <div className="row">
                     
-    
+                    <div className="button">
+                        <Link to="/dashboard-admin">
+                            <button className="btn"><i class="fa fa-close"></i></button>
+                        </Link>
+                    </div>
                     
                     <div className="Loan-head-container">
                         <div class="row">
                             
                             <div className="col-md-1">Loan ID</div>
-                            <div className="col-md-2">Loan Type</div>
+                            <div className="col-md-1">Loan Type</div>
                             <div className="col-md-1">Years</div>
                             <div className="col-md-1">Amount</div>
                             <div className="col-md-2">Customer Id</div>

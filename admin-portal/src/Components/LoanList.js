@@ -89,7 +89,7 @@ export const LoanList=({loaninfo})=>{
                 <div className="loan-list">
                     <div class="row">
                         <div className="col-md-1">{loaninfo.loanId}</div>
-                        <div className="col-md-2">{loaninfo.loanType}</div>
+                        <div className="col-md-1">{loaninfo.loanType}</div>
                         <div className="col-md-1">{loaninfo.noOfYears}</div>
                         <div className="col-md-1">{loaninfo.amount}</div>
                         <div className="col-md-2">{loaninfo.customerId}</div>
