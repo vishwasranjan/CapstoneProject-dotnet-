@@ -3,6 +3,7 @@ import withRouter from "./withRouter";
 import './IndividualUserDetail.css'
 // import { withRouter } from "react-router";
 import './IndividualUserDetail.css'
+import { Link } from "react-router-dom";
 //import { useParams } from "react-router-dom";
  class IndividualUserDetail extends Component{
 
@@ -36,7 +37,7 @@ constructor(props){
 
 }
 componentDidMount(){
-    fetch("http://localhost:5050/User/GetEmpById/"+this.props.params.id)
+    fetch("http://localhost:5293/User/GetEmpById/"+this.props.params.id)
     .then(response => response.json())
     .then(data => {
         console.log('data:', data);
@@ -50,59 +51,70 @@ componentDidMount(){
 
         return(
             <div>
-                
+
+                <section className="background-user-individual">
+                    <div className="user-pic">
+                    <img src="https://www.bing.com/th?id=OIP.Gfp0lwE6h7139625a-r3aAHaHa&w=166&h=166&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"/>
+                    
+                    </div>
+                    
                <div className="user-detail-box">
                     <div className="row">
-                        <div className="col">Customer Id</div>
+                        <div className="col"><b>Customer Id</b></div>
                         <div className="col">{this.state.singleuser.customerId}</div>
                     </div>
                     <div className="row">
-                        <div className="col">firstName</div>
+                        <div className="col"><b>First Name</b></div>
                         <div className="col">{this.state.singleuser.firstName}</div>
                     </div>
 
                     <div className="row">
-                        <div className="col">middleName</div>
+                        <div className="col"><b>Middle Name</b></div>
                         <div className="col">{this.state.singleuser.middleName}</div>
                     </div>
                     <div className="row">
-                        <div className="col">lastName</div>
+                        <div className="col"><b>Last Name</b></div>
                         <div className="col">{this.state.singleuser.lastName}</div>
                     </div>
                     <div className="row">
-                        <div className="col">Phone</div>
+                        <div className="col"><b>Phone</b></div>
                         <div className="col">{this.state.singleuser.phone}</div>
                     </div>
                     <div className="row">
-                        <div className="col">Alternate Phone</div>
+                        <div className="col"><b>Alternate Phone</b></div>
                         <div className="col">{this.state.singleuser.alternatePhone}</div>
                     </div>
                     <div className="row">
-                        <div className="col">Email ID</div>
+                        <div className="col"><b>Email ID</b></div>
                         <div className="col">{this.state.singleuser.email}</div>
                     </div>
                     <div className="row">
-                        <div className="col">City</div>
+                        <div className="col"><b>City</b></div>
                         <div className="col">{this.state.singleuser.city}</div>
                     </div>
                     <div className="row">
-                        <div className="col">State</div>
+                        <div className="col"><b>State</b></div>
                         <div className="col">{this.state.singleuser.state}</div>
                     </div>
                     <div className="row">
-                        <div className="col">Country</div>
+                        <div className="col"><b>Country</b></div>
                         <div className="col">{this.state.singleuser.country}</div>
                     </div>
                     <div className="row">
-                        <div className="col">PIN</div>
+                        <div className="col"><b>PIN</b></div>
                         <div className="col">{this.state.singleuser.pin}</div>
                     </div>
                     <div className="row">
-                        <div className="col">Gender</div>
+                        <div className="col"><b>Gender</b></div>
                         <div className="col">{this.state.singleuser.gender}</div>
                     </div>
                 </div>
-                
+                <div className="button-single-user">
+                    <Link to="/all-users">
+                        <button className="btn btn-primary">Cancel</button>
+                    </Link>
+                </div>
+                </section>
             </div>
             
         )

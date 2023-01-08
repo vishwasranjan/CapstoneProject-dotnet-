@@ -15,7 +15,11 @@ export class Dashboard extends Component {
         localStorage.removeItem('admintoken');
         //navigate to login
     }
+    
     render() {
+        console.log("x");
+        if(localStorage.getItem('admintoken'))
+        {
         return (
             // <Router>
             <div className="dashboard-container">
@@ -114,10 +118,11 @@ export class Dashboard extends Component {
 
   </div>
   
-  {/* <marquee style={{ color: 'red', fontSize: '3em' }}>Test</marquee> */}
+  
             </div>
-            //   {/* </Router> */}
+            
         )
+                    }
     }
 }
 
