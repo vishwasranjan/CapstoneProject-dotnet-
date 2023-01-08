@@ -110,5 +110,12 @@ body
     color:#234168;
     padding: 10px;
     font-weight: bold;
-    box-shadow: 2px 3px 2px 1px  gainsboro;
+    /* box-shadow: 2px 3px 2px 1px  gainsboro; */
+}
+.i{
+width: 300px;
+}
+.offers
+{
+    display: inline;
 }

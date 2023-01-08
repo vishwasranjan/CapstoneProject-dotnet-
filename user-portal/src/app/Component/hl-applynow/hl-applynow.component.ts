@@ -15,7 +15,7 @@ export class HlApplynowComponent implements OnInit{
 
   ngOnInit(): void {
 
-    let loans= new Loans(0,0,"",0,0);
+    let loans= new Loans(0,0,"",0,0, "", "","","");
     this.registerForm=new FormGroup({
       customerid:new FormControl(loans.customerId, Validators.required),
       amount: new FormControl(loans.amount, Validators.required),
@@ -38,10 +38,11 @@ export class HlApplynowComponent implements OnInit{
       //alert("Home Loan application successfully initiated")
       console.log(loans);
       console.log(loans.noOfYears);
-      this.userService.addLoan(loans).subscribe(res=>console.log(res));
-      this.msg = "You have successfully applied for Home Loan"
-      this.router.navigate(['dashboard']);
-    
+      // this.userService.addLoan(loans).subscribe(res=>console.log(res));
+      // this.msg = "You have successfully applied for Home Loan"
+      // this.router.navigate(['dashboard']);
+     this.userService.loan = loans;
+     this.router.navigate(['itr']);
     }
   }
 

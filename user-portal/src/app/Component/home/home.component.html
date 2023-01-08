@@ -1,6 +1,6 @@
 <navbar></navbar>
 <div class="container">
-  <div class="userd">
+  <div class="userd shadow-lg p-3 mb-5 bg-white rounded">
   <h1>Welcome</h1>
    <hr/>
      {{u.firstName}} &nbsp; {{u.lastName}}<br/>
@@ -105,3 +105,21 @@
     <br />
 
   </div>
+<div class="row">
+  <div *ngFor = "let o of offers" class="col-md-3 mx-auto my-5">
+    
+    <div >
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top i" src="../../../assets/{{o.picture}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{o.title}}</h5>
+        <p class="card-text">{{o.descript}}</p>
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      </div>
+    </div>
+    </div>
+    
+  </div>
+  </div>
+  <br/>
+  <br/>

@@ -10,6 +10,8 @@ import { Payee } from '../Models/payee';
 import { Cardapply } from '../Models/cardapply';
 import { TransactionDetails } from '../Models/transaction-details';
 import { Loans } from '../Models/loans';
+import { identifierName } from '@angular/compiler';
+import { Offers } from '../Models/offers';
 @Injectable({
   providedIn: 'root'
 })
@@ -22,6 +24,7 @@ export class UserServiceService {
    currentUser : BehaviorSubject<any> = new BehaviorSubject(null);
    c : Subject<number> = new Subject();
    jwtHelperService = new JwtHelperService();
+   loan : Loans = new Loans(0,0,"",0,0,"0","","","");
    get getc(): Subject<number>{
     return this.c;
    }
@@ -122,6 +125,15 @@ getUserTransactions(customer_id: number): Observable<TransactionDetails[]>{
 addLoan(loan: Loans)
 {
   return this.http.post(this.apiUrl + "User/AddLoan", loan );
+}
+changePassword(currentPassword: string, newPassword: string, id: number)
+{
+  return this.http.post(this.apiUrl + "User/changePassword?currentPassword=" + currentPassword + "&newPassword=" + newPassword + "&id=" + id, {currentPassword, newPassword});
+}
+
+getAllOffers(): Observable<Offers[]>
+{
+  return this.http.get<Offers[]>(this.apiUrl + "User/ActiveOffers");
 }
 }
  
