@@ -325,6 +325,18 @@ namespace BankDBFirstLib
             return false;
         }
 
-        
+        public bool changePassword(string currentPassword, string newPassword, int id)
+        {
+            var u = dbCtx.User_login.Where(o => o.CustomerId == id).SingleOrDefault();
+            string pswd = u.pswd;
+            if (currentPassword != pswd)
+                return false;
+            else
+            {
+                u.pswd = newPassword;
+                dbCtx.SaveChanges();
+                return true;
+            }
+        }
     }
 }

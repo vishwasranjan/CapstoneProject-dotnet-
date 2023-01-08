@@ -1,6 +1,6 @@
 
 
-<div style="width:100%; background-color:ghostwhite; height:50px; box-shadow: 3px 3px 2px 2px lightgray;">
+<div style="width:100%; background-color:ghostwhite; height:50px; box-shadow: 2px 2px 1px 2px lightgray;">
     <div class="dropdown">
         <button class="dropbtn"><a class="navbar" routerLink="/home">Home</a></button>
     </div>
@@ -40,7 +40,9 @@
         <div class="dropdown-content">
             <!-- <a href="#">Current Account</a>
             <a href="#">Savings Account</a> -->
+            
             <a [routerLink]="['/transaction-details']">Transaction History</a>
+            <a [routerLink] = "['/changePassword']">Change Password</a>
         </div>
     </div>
 

@@ -29,6 +29,8 @@ import { ChatComponent } from './Component/chat/chat.component';
 import { ChatbotModelComponent } from './Component/chatbot-model/chatbot-model.component';
 import { EmailServiceComponent } from './Component/email-service/email-service.component';
 import { TransferToPayeeComponent } from './Component/transfer-to-payee/transfer-to-payee.component';
+import { HomeLoanComponent } from './Component/home-loan/home-loan.component';
+import { ChangePasswordComponent } from './Component/change-password/change-password.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { TransferToPayeeComponent } from './Component/transfer-to-payee/transfer
     ChatComponent,
     ChatbotModelComponent,
     EmailServiceComponent,
-    TransferToPayeeComponent
+    TransferToPayeeComponent,
+    HomeLoanComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule,

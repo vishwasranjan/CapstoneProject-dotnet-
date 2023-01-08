@@ -71,7 +71,7 @@ namespace BankDBFirstLib
 
         bool checkAcc(int custId);
 
-
+        bool changePassword(string currentPassword, string newPassword, int id);
 
 
         //aDMIN SIDE FUNCTIONS

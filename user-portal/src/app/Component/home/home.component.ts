@@ -3,6 +3,7 @@ import {User} from '../../Models/user';
 import { UserServiceService } from 'src/app/Service/user-service.service';
 import { map } from 'rxjs';
 import { Account } from 'src/app/Models/account';
+import { Offers } from 'src/app/Models/offers';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -13,6 +14,7 @@ export class HomeComponent implements OnInit{
   customer_id:any;
   u : User = new User(0,"","","","","","","","", "", "","", "");
   account : Account = new Account(0,"","", "", "",0);
+  offers : Offers[] = [];
   constructor(private userService: UserServiceService){
   
 
@@ -48,6 +50,12 @@ ngOnInit(): void {
      this.account = data;
      console.log(this.account);
    });
+
+   this.userService.getAllOffers().subscribe(data=>{
+    this.offers = data;
+    console.log(data);
+   })
+   
 }
 
 }

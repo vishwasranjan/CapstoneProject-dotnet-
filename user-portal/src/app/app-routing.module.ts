@@ -22,6 +22,8 @@ import { ChatComponent } from './Component/chat/chat.component';
 import { ChatbotModelComponent } from './Component/chatbot-model/chatbot-model.component';
 import { EmailServiceComponent } from './Component/email-service/email-service.component';
 import { TransferToPayeeComponent } from './Component/transfer-to-payee/transfer-to-payee.component';
+import { HomeLoanComponent } from './Component/home-loan/home-loan.component';
+import { ChangePasswordComponent } from './Component/change-password/change-password.component';
 const routes: Routes=[
    
   {
@@ -91,20 +93,34 @@ const routes: Routes=[
     canActivate: [AuthGuardGuard]
   },
   {
-    path: 'navbar', component: NavbarComponent
+    path: 'navbar', component: NavbarComponent,
+    canActivate: [AuthGuardGuard]
   },
   {
-    path:'chat', component: ChatComponent
+    path:'chat', component: ChatComponent,
+    canActivate: [AuthGuardGuard]
   },
   {
-    path:'chatbot-model', component: ChatbotModelComponent
+    path:'chatbot-model', component: ChatbotModelComponent,
+    canActivate: [AuthGuardGuard]
   },
   {
     path:'email-service', component: EmailServiceComponent
   },
   {
-    path: 'transfer-to-payee', component: TransferToPayeeComponent
-  }
+    path: 'transfer-to-payee', component: TransferToPayeeComponent,
+    canActivate: [AuthGuardGuard]
+  },
+  {
+
+    path:'home-loan', component: HomeLoanComponent, //home loan
+    canActivate: [AuthGuardGuard]
+
+   },
+   {
+    path: 'changePassword', component: ChangePasswordComponent,
+    canActivate: [AuthGuardGuard]
+   }
 
  
 ]
