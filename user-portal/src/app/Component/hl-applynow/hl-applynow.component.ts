@@ -41,7 +41,7 @@ export class HlApplynowComponent implements OnInit{
       // this.userService.addLoan(loans).subscribe(res=>console.log(res));
       // this.msg = "You have successfully applied for Home Loan"
       // this.router.navigate(['dashboard']);
-    
+     this.userService.loan = loans;
      this.router.navigate(['itr']);
     }
   }

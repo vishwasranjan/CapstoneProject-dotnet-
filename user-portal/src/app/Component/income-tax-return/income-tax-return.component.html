@@ -1,3 +1,4 @@
+<navbar></navbar>
 <div class="container">
     <!-- <div class="progress">
         <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 50%;"
@@ -8,40 +9,46 @@
             <div class="col-md-5">
                 <p><b>Financial Year 2021-22*</b></p>
                     <div class="card-body">
-                        <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit()">
+
+                        <input type="text" name="it1" [(ngModel)]="it1"/>
+                        <!-- <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit()">
                             <div class="row">
                                 <div class="col-9">
-                                    <input type="text" class="form-control" for="uploadFileUrl" formControlName="upload File Url">
-                                </div>
-                                <div *ngIf="registerForm.controls['uploadFileUrl'].invalid && registerForm.controls['uploadFileUrl'].dirty"
+                                    <input type="text" class="form-control" >
+                                </div> -->
+                                <!-- <div *ngIf="registerForm.controls['uploadFileUrl'].invalid && registerForm.controls['uploadFileUrl'].dirty"
                                     class="text-danger">
                                     <div *ngIf="registerForm.uploadFileUrl.errors?.required">Choose a suitable file type</div>
-                                </div>
-                                    <div class="col">
-                                        <button type="submit" class="btn btn-outline-secondary">Submit</button>
-                                    </div>
-                            </div>
-                        </form>
+                                </div> -->
+                                    
+                            <!-- </div>
+                        </form> -->
                     </div><br />
                 <p><b>Financial Year 2020-21*</b></p>
                     <div class="card-body">
-                        <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit()">
+                        <input type="text" name = "it2" [(ngModel)]="it2"/>
+                       
+
+                        <!-- <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit()">
                             <div class="row">
                                 <div class="col-9">
-                                    <input type="text" class="form-control" formControlName="uploadFileUrl" for="uploadFileUrl">
-                                </div>
-                                <div *ngIf="registerForm.controls['uploadFileUrl'].invalid && registerForm.controls['uploadFileUrl'].dirty"
+                                    <input type="text" class="form-control" >
+                                </div> -->
+                                <!-- <div *ngIf="registerForm.controls['uploadFileUrl'].invalid && registerForm.controls['uploadFileUrl'].dirty"
                                     class="text-danger">
                                     <div *ngIf="registerForm.uploadFileUrl.errors?.required">Choose a suitable file type</div>
-                                </div>
-                                    <div class="col">
+                                </div> -->
+                                    <!-- <div class="col">
                                         <button type="submit" class="btn btn-outline-secondary">Submit</button>
-                                    </div>
-                            </div>
-                        </form>
+                                    </div> -->
+                            <!-- </div>
+                        </form> -->
                     </div><br />
-                
-                <div>
+                  <div class="card-body">
+                    <p><b>Bank Statement</b></p>
+                    <input type="text" name="bs" [(ngModel)]="bs"/>
+                  </div>
+                <!-- <div>
                     <p>---------------------------------OR-------------------------------</p>
                     <p>If you haven't filed any ITR(Income Tax Return) yet and your annual income is less than 2.5 lakh
                     </p><br />
@@ -50,7 +57,7 @@
                             Declare your Income Manually
                         </button>
                     </div>
-                </div> -->
+                </div> --> 
             </div>
             <div class="col-sm-1">
                 <div class="vertical"></div>
@@ -80,14 +87,15 @@
     <div class="last">
         <div class="row" style="padding-left: 250px;">
             <div class="col-md-4">
-                <p><a routerLink="/proceed"><button class="btn btn-outline-primary mr-1">Cancel</button></a>
+                <p><a routerLink="/proceed"><button class="btn btn-outline-primary mr-1">Back</button></a>
                 </p>
             </div>
             <div class="col-md-4">
-                <p><a routerLink="/proceed-inbetween"><button class="btn btn-outline-primary mr-1">Proceed →</button></a>
-                </p>
+                <button class="btn btn-outline-primary mr-1" (click)="submit()">Submit</button>
+            
             </div>
         </div>
     </div>
 </div>
+{{msg}}
 <footer></footer>

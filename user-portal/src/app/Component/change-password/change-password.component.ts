@@ -41,6 +41,7 @@ this.userService.changePassword(this.currentPassword,this.newPassword, this.user
   else
   {
   this.errMsg = "You have successfully changed the password";
+  this.userService.removeToken();
   setTimeout(() => {
     this.router.navigate(['login']);
   },3000);
