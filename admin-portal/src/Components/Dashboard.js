@@ -25,7 +25,7 @@ export class Dashboard extends Component {
                             <i class="fa fa-home"></i> Logout</button>
                     </Link>
                 </div>
-                    
+                                    
                 <div className="row">
                 <div className="col-md-3">
                     <ul className="list-group">
@@ -113,6 +113,7 @@ export class Dashboard extends Component {
   </div>
 
   </div>
+  
   {/* <marquee style={{ color: 'red', fontSize: '3em' }}>Test</marquee> */}
             </div>
             //   {/* </Router> */}

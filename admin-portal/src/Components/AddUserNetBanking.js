@@ -66,50 +66,67 @@ export class AddUserNetBanking extends Component{
 
     
     render(){
-        return(
-            <div>
-                <section className="background">
-                <div id="Addform">
-                
-                <div className="card col-md-10" >
-                    <div className="row">
-                        <div className="col-md-3">
-                            <label>Customer ID</label>
-                        </div>
-                        
-
-                        
-                        <div className="col-md-4">
-                            <input name="customerId" onChange={this.fHandler} value={this.state.customerId}  placeholder="Customer Id" ></input>
-                        </div>
-
-                    </div>
-                    <div className="row">
-                        <div className="col-md-3">
-                            <label>User Name</label>
-                        </div>
-                        <div className="col-md-4">
-                            <input name="userName" onChange={this.fHandler} value={this.state.userName}  placeholder="User Name"></input>
-                        </div>
-                        
-                    </div>
-                    <div className="row">
-                        <div className="col-md-3">
-                            <label>User Password</label>
-                        </div>
-                        <div className="col-md-4">
-                            <input name="pswd" onChange={this.fHandler} value={this.state.pswd} placeholder="Password"></input>
-                        </div>
-                        
-                    </div>
-                    <div className="btn">
-                            <button onClick={this.UserCredentials}  className="btn btn-primary">Submit</button>
+        return (
+          
+            <div className="fullpage">
+              <section className="background">
+              <div id="Addform">
+                <div class="card0 col-12 col-md-9 col-lg-7 col-xl-6">
+                <div className="card col-md-10">
+                  <div className="row">
+                    <div className="col-md-3">
+                      <label>Customer ID</label>
                     </div>
 
+                    <div className="col-md-4">
+                      <input
+                        name="customerId"
+                        onChange={this.fHandler}
+                        value={this.state.customerId}
+                        placeholder="Customer Id"
+                      ></input>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-3">
+                      <label>User Name</label>
+                    </div>
+                    <div className="col-md-4">
+                      <input
+                        name="userName"
+                        onChange={this.fHandler}
+                        value={this.state.userName}
+                        placeholder="User Name"
+                      ></input>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-3">
+                      <label>User Password</label>
+                    </div>
+                    <div className="col-md-4">
+                      <input
+                        name="pswd"
+                        onChange={this.fHandler}
+                        value={this.state.pswd}
+                        placeholder="Password"
+                      ></input>
+                    </div>
+                  </div>
+                  <div className="btn">
+                    <button onClick={this.UserCredentials} className="btn btn-primary">
+                            Submit
+                    </button>
+                  </div>
                 </div>
-        </div>
-                </section>
+                </div>
+                
+              </div>
+              </section>
             </div>
-        )
+          
+        );
     }
 }
+{/* <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+      <div class="card" style="border-radius: 15px;"></div> */}

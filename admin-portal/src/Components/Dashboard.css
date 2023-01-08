@@ -39,7 +39,9 @@ img
 }
 
 .logout{
-    text-align: right;
+    text-align: center;
+    float: right;
+    margin-top: 0;
 }
 .logout button{
     border-color: #213e65;
@@ -48,5 +50,5 @@ img
     margin-right: 5px; 
 }
 .logout button:hover{
-    color: red;
+    color: #30609f;
 }
