@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, Link, useNavigate } from "react-router-dom";
 import { AddCustomer } from "./AddCustomer";
 import { AllTransaction } from "./AllTransaction";
 import IndividualUserDetail from "./IndividualUserDetail";
@@ -12,7 +12,7 @@ import "./Dashboard.css"
 import Login from "./LoginPage";
 export class Dashboard extends Component {
     logout(){
-        localStorage.removeItem('token');
+        localStorage.removeItem('admintoken');
         //navigate to login
     }
     render() {

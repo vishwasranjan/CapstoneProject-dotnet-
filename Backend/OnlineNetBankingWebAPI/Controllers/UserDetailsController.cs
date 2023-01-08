@@ -230,12 +230,12 @@ namespace OnlineNetBankingWebAPI.Controllers
             return _dal.AdminLogin(id, password);
         }
 
-        [HttpGet]
-        [Route("checkAcc")]
-        public bool ChkAcc(int custId)
-        {
-            return _dal.checkAcc(custId);
-        }
+        //[HttpGet]
+        //[Route("checkAcc")]
+        //public bool ChkAcc(int custId)
+        //{
+        //    return _dal.checkAcc(custId);
+        //}
 
 
 
@@ -333,6 +333,53 @@ namespace OnlineNetBankingWebAPI.Controllers
         public List<loan> ApprovedLoans()
         {
             return _dal.ApprovedLoans();
+        }
+
+        [HttpGet]
+        [Route("CheckExistingUser")]
+        public int CheckExistingUser(int custid)
+        {
+            return _dal.CheckExistingUser(custid);
+        }
+
+
+        [HttpPost]
+        [Route("AddUserCredentials")]
+        public void AddUserCredentials(user_login user_Login)
+        {
+            _dal.AddUserLogin(user_Login);
+        }
+
+
+
+        [HttpPost]
+        [Route("AdminLoginByToken")]
+        public IActionResult AdminLoginByToken(int id, string password)
+        {
+            var admin = _dal.GetAdminById(id);
+            if (id == admin.Admin_id && password == admin.Admin_password)
+            {
+                //return OK with token
+                var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ByYM000OLlMQG6VVVp1OH7Xzyr7gHuw1qvUC5dcGt3SNM"));
+
+                var token = new JwtSecurityToken(
+                issuer: "cosmopolitian",
+                audience: "cosmopolitian",
+                expires: DateTime.Now.AddHours(3),
+                                   //claims: new List<Claim> { new Claim("t1", "v1"), new Claim("t2", "v2") },
+                                   signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
+                );
+
+
+                return Ok(new
+                {
+                    token = new JwtSecurityTokenHandler().WriteToken(token),
+                    expiration = token.ValidTo
+                });
+
+
+            }
+            return Unauthorized();
         }
 
 

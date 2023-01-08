@@ -317,14 +317,23 @@ namespace BankDBFirstLib
             return lstUser;
         }
 
-        public bool checkAcc(int custId)
+        public int CheckExistingUser(int custId)
         {
             var user = dbCtx.Account.Where(o => o.CustomerId == custId).SingleOrDefault();
             if (user != null)
             {
-                return true;
+                return 200;
             }
-            return false;
+            else
+            {
+                return 400;
+            }
+        }
+
+        public void AddUserCredentials(user_login user_Login)
+        {
+            dbCtx.Add(user_Login);
+            dbCtx.SaveChanges();
         }
 
 
