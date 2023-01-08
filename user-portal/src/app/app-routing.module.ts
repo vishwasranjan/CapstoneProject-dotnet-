@@ -24,6 +24,7 @@ import { EmailServiceComponent } from './Component/email-service/email-service.c
 import { TransferToPayeeComponent } from './Component/transfer-to-payee/transfer-to-payee.component';
 import { HomeLoanComponent } from './Component/home-loan/home-loan.component';
 import { ChangePasswordComponent } from './Component/change-password/change-password.component';
+import { IncomeTaxReturnComponent } from './Component/income-tax-return/income-tax-return.component';
 const routes: Routes=[
    
   {
@@ -85,7 +86,7 @@ const routes: Routes=[
   },
 
   {
-    path:'hl-applynow', component: HlApplynowComponent,
+    path:'hl', component: HlApplynowComponent,
     canActivate: [AuthGuardGuard]
   },
   {
@@ -119,6 +120,10 @@ const routes: Routes=[
    },
    {
     path: 'changePassword', component: ChangePasswordComponent,
+    canActivate: [AuthGuardGuard]
+   },
+   {
+    path: 'itr', component: IncomeTaxReturnComponent,
     canActivate: [AuthGuardGuard]
    }
 

@@ -31,6 +31,7 @@ import { EmailServiceComponent } from './Component/email-service/email-service.c
 import { TransferToPayeeComponent } from './Component/transfer-to-payee/transfer-to-payee.component';
 import { HomeLoanComponent } from './Component/home-loan/home-loan.component';
 import { ChangePasswordComponent } from './Component/change-password/change-password.component';
+import { IncomeTaxReturnComponent } from './Component/income-tax-return/income-tax-return.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,9 @@ import { ChangePasswordComponent } from './Component/change-password/change-pass
     EmailServiceComponent,
     TransferToPayeeComponent,
     HomeLoanComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    HlApplynowComponent,
+    IncomeTaxReturnComponent
   ],
   imports: [
     BrowserModule,

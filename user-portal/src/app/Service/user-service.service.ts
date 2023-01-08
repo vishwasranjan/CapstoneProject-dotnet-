@@ -24,6 +24,7 @@ export class UserServiceService {
    currentUser : BehaviorSubject<any> = new BehaviorSubject(null);
    c : Subject<number> = new Subject();
    jwtHelperService = new JwtHelperService();
+   loan : Loans = new Loans(0,0,"",0,0,"","","","");
    get getc(): Subject<number>{
     return this.c;
    }
