@@ -38,8 +38,8 @@
     <div class="dropdown">
         <button class="dropbtn"><p class="navbar" >Account</p></button>
         <div class="dropdown-content">
-            <!-- <a href="#">Current Account</a>
-            <a href="#">Savings Account</a> -->
+            <!-- <a href="#">Current Account</a> -->
+            <a [routerLink]="['/savings-account']">Savings Account</a>
             <a [routerLink]="['/transaction-details']">Transaction History</a>
         </div>
     </div>

@@ -36,6 +36,11 @@ import { AboutUsComponent } from './Component/about-us/about-us.component';
 import { FeedbackFormComponent } from './Component/feedback-form/feedback-form.component';
 import { ChequebookRequestComponent } from './Component/chequebook-request/chequebook-request.component';
 import { HomeLoanComponent } from './Component/home-loan/home-loan.component';
+import { ProceedComponent } from './Component/proceed/proceed.component';
+import { IncomeTaxReturnComponent } from './Component/income-tax-return/income-tax-return.component';
+import { ProceedInbetweenComponent } from './Component/proceed-inbetween/proceed-inbetween.component';
+import { BankStatementComponent } from './Component/bank-statement/bank-statement.component';
+import { ProfileReadyComponent } from './Component/profile-ready/profile-ready.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +70,12 @@ import { HomeLoanComponent } from './Component/home-loan/home-loan.component';
     AboutUsComponent,
     FeedbackFormComponent,
     ChequebookRequestComponent,
-    HomeLoanComponent
+    HomeLoanComponent,
+    ProceedComponent,
+    IncomeTaxReturnComponent,
+    ProceedInbetweenComponent,
+    BankStatementComponent,
+    ProfileReadyComponent,
   ],
   imports: [
     BrowserModule,
