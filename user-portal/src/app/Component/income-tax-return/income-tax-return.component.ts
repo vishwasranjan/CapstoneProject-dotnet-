@@ -13,30 +13,10 @@ export class IncomeTaxReturnComponent implements OnInit {
   get f() { return this.registerForm.controls; }
 
   ngOnInit(): void {
-    this.registerForm = this.formBuilder.group({
-      fileUpload: ['', [Validators.required]],
- 
-    });
     
   }
   submitted=false;
-  onImageChangeFromFile($event:any)
-  {
-      if ($event.target.files && $event.target.files[0]) {
-        let file = $event.target.files[0];
-        console.log(file);
-          if(file.type == "application/pdf") {
-            console.log("correct");
-          }
-          else {
-            //call validation
-            this.registerForm.reset();
-            this.registerForm.controls["fileUpload"].setValidators([Validators.required]);
-            this.registerForm.get('fileUpload').updateValueAndValidity();
-          }
-      }
-  }
-
+  
   
   submit() {
     this.submitted = true;

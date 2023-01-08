@@ -1,5 +1,7 @@
 .loan-container{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJPNlybXT7uj4Hi76iZcZdzofxnV0rBoAQfA&usqp=CAU");
+    position: relative;
+    bottom: 50px;
+    
 }
 .add-offer-box{
     padding: 10px;
@@ -10,7 +12,7 @@
     margin-right: 50px;
     border-radius: 10px;
     background-color: rgb(220, 217, 217, 0.5);
-    text-align: center;
+    align-items: justify;
     backdrop-filter: blur(14px);
     
 }
@@ -42,6 +44,6 @@ h4{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-.offer-row{
+/* .offer-row{
     padding-left: 250px;
-}
+} */

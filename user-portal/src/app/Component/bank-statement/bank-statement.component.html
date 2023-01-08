@@ -1,9 +1,9 @@
 <div class="container">
-    <div class="progress">
+    <!-- <div class="progress">
         <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 50%;"
             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%
         </div>
-    </div><br />
+    </div><br /> -->
     <h4>Please Upload Your Bank Statement (PDF Format)</h4><br />
     <div class="card">
         <div class="card-header">
@@ -84,8 +84,7 @@
             <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit()">
                 <div class="row">
                     <div class="col-9">
-                        <input (change)="onImageChangeFromFile($event)" type="file"
-                            formControlName="fileUpload" class="form-control" id="fileUpload">
+                        <input type="text" class="form-control" formControlName="uploadFileUrl" for="uploadFileUrl">
                     </div>
                     <div *ngIf="registerForm.controls['fileUpload'].invalid && registerForm.controls['fileUpload'].dirty"
                         class="text-danger">

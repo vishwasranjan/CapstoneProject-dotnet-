@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, Link, useNavigate } from "react-router-dom";
 import { AddCustomer } from "./AddCustomer";
 import { AllTransaction } from "./AllTransaction";
 import IndividualUserDetail from "./IndividualUserDetail";
@@ -12,10 +12,14 @@ import "./Dashboard.css"
 import Login from "./LoginPage";
 export class Dashboard extends Component {
     logout(){
-        localStorage.removeItem('token');
+        localStorage.removeItem('admintoken');
         //navigate to login
     }
+    
     render() {
+        console.log("x");
+        if(localStorage.getItem('admintoken'))
+        {
         return (
             // <Router>
             <div className="dashboard-container">
@@ -25,7 +29,7 @@ export class Dashboard extends Component {
                             <i class="fa fa-home"></i> Logout</button>
                     </Link>
                 </div>
-                    
+                                    
                 <div className="row">
                 <div className="col-md-3">
                     <ul className="list-group">
@@ -113,10 +117,12 @@ export class Dashboard extends Component {
   </div>
 
   </div>
-  {/* <marquee style={{ color: 'red', fontSize: '3em' }}>Test</marquee> */}
+  
+  
             </div>
-            //   {/* </Router> */}
+            
         )
+                    }
     }
 }
 

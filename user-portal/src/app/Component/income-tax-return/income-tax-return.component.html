@@ -1,24 +1,21 @@
 <div class="container">
-    <div class="progress">
+    <!-- <div class="progress">
         <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 50%;"
             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
-    </div><br /><br />
+    </div><br /><br /> -->
     <div class="card">
         <div class="row" style="padding-top: 10px;">
             <div class="col-md-5">
-                <!-- <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit()"> -->
-
-                    <p><b>Financial Year 2022-23*</b></p>
+                <p><b>Financial Year 2021-22*</b></p>
                     <div class="card-body">
                         <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit()">
                             <div class="row">
                                 <div class="col-9">
-                                    <input (change)="onImageChangeFromFile($event)" type="file"
-                                        formControlName="fileUpload" class="form-control" id="fileUpload">
+                                    <input type="text" class="form-control" for="uploadFileUrl" formControlName="upload File Url">
                                 </div>
-                                <div *ngIf="registerForm.controls['fileUpload'].invalid && registerForm.controls['fileUpload'].dirty"
+                                <div *ngIf="registerForm.controls['uploadFileUrl'].invalid && registerForm.controls['uploadFileUrl'].dirty"
                                     class="text-danger">
-                                    <div *ngIf="registerForm.fileUpload.errors?.required">Choose a suitable file type</div>
+                                    <div *ngIf="registerForm.uploadFileUrl.errors?.required">Choose a suitable file type</div>
                                 </div>
                                     <div class="col">
                                         <button type="submit" class="btn btn-outline-secondary">Submit</button>
@@ -26,17 +23,16 @@
                             </div>
                         </form>
                     </div><br />
-                    <p><b>Financial Year 2021-22*</b></p>
+                <p><b>Financial Year 2020-21*</b></p>
                     <div class="card-body">
                         <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit()">
                             <div class="row">
                                 <div class="col-9">
-                                    <input (change)="onImageChangeFromFile($event)" type="file"
-                                        formControlName="fileUpload" class="form-control" id="fileUpload">
+                                    <input type="text" class="form-control" formControlName="uploadFileUrl" for="uploadFileUrl">
                                 </div>
-                                <div *ngIf="registerForm.controls['fileUpload'].invalid && registerForm.controls['fileUpload'].dirty"
+                                <div *ngIf="registerForm.controls['uploadFileUrl'].invalid && registerForm.controls['uploadFileUrl'].dirty"
                                     class="text-danger">
-                                    <div *ngIf="registerForm.fileUpload.errors?.required">Choose a suitable file type</div>
+                                    <div *ngIf="registerForm.uploadFileUrl.errors?.required">Choose a suitable file type</div>
                                 </div>
                                     <div class="col">
                                         <button type="submit" class="btn btn-outline-secondary">Submit</button>
@@ -44,26 +40,8 @@
                             </div>
                         </form>
                     </div><br />
-                    <p><b>Financial Year 2020-21*</b></p>
-                    <div class="card-body">
-                        <form *ngIf="registerForm" [formGroup]="registerForm" class="form" (ngSubmit)="submit()">
-                            <div class="row">
-                                <div class="col-9">
-                                    <input (change)="onImageChangeFromFile($event)" type="file"
-                                        formControlName="fileUpload" class="form-control" id="fileUpload">
-                                </div>
-                                <div *ngIf="registerForm.controls['fileUpload'].invalid && registerForm.controls['fileUpload'].dirty"
-                                    class="text-danger">
-                                    <div *ngIf="registerForm.fileUpload.errors?.required">Choose a suitable file type</div>
-                                </div>
-                                    <div class="col">
-                                        <button type="submit" class="btn btn-outline-secondary">Submit</button>
-                                    </div>
-                            </div>
-                        </form>
-                    </div><br />
-                <!-- </form> -->
-                <!-- <div>
+                
+                <div>
                     <p>---------------------------------OR-------------------------------</p>
                     <p>If you haven't filed any ITR(Income Tax Return) yet and your annual income is less than 2.5 lakh
                     </p><br />

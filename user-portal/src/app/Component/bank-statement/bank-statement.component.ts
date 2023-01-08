@@ -16,27 +16,10 @@ export class BankStatementComponent implements OnInit {
   get f() { return this.registerForm.controls; }
 
   ngOnInit(): void {
-    this.registerForm = this.formBuilder.group({
-      fileUpload: ['', [Validators.required]],})
     
   }
   submitted=false;
-  onImageChangeFromFile($event:any)
-  {
-      if ($event.target.files && $event.target.files[0]) {
-        let file = $event.target.files[0];
-        console.log(file);
-          if(file.type == "application/pdf") {
-            console.log("correct");
-          }
-          else {
-            //call validation
-            this.registerForm.reset();
-            this.registerForm.controls["fileUpload"].setValidators([Validators.required]);
-            this.registerForm.get('fileUpload').updateValueAndValidity();
-          }
-      }
-  }
+  
 
   yesNo() {
    // var y= document.getElementById("yes") as HTMLInputElement;
@@ -72,7 +55,7 @@ export class BankStatementComponent implements OnInit {
   }
   submit1() {
     // if(this.yesNo()){
-     this.router.navigate(["proceed1"])
+     this.router.navigate(["profile-ready"])
     // }
   }
 

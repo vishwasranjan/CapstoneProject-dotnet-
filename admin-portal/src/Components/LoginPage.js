@@ -43,15 +43,15 @@ const Login = (props) => {
         //console.log("id="+id+" password="+pass);
         //console.log(this.state.id);
         //http://localhost:5050/User/LoginByToken?id=123&password=vishwas
-        fetch("http://localhost:5293/User/AdminLogin?id="+admin.id+"&password="+admin.password, {
-            method: 'GET',
+        fetch("http://localhost:5293/User/AdminLoginByToken?id="+admin.id+"&password="+admin.password, {
+            method: 'POST',
         })
             //.then(response=>response.json())
             .then((res) => res.json()).then((data)=>{
                 console.log('data:',data);
 
-                if(data){
-                    //localStorage.setItem('token',data);
+                if(data.status!=401){
+                    localStorage.setItem('admintoken',data);
                     //props.fn();
                     console.log('inside if');
                     navigate('/dashboard-admin');
@@ -101,11 +101,11 @@ const Login = (props) => {
                 <div className="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
                     <div className="row gx-lg-5 align-items-center mb-5">
                         <div className="col-lg-6 mb-5 mb-lg-0">
-                            <h1 className="my-5 display-5 fw-bold ls-tight">
+                            <h1 className="my-5 display-5 fw-bold ls-tight" style={{color: "#e8effd"}}>
                                 Cosmopolitian Bank <br />
 
                             </h1>
-                            <p className="mb-4 opacity-70">
+                            <p className="mb-4 opacity-70" style={{color: "#bad0f8"}}>
                                 Solutions to all your finances, internet banking at your finger tips.
                             </p>
                         </div>
@@ -115,12 +115,11 @@ const Login = (props) => {
                             <div id="radius-shape-2" className="position-absolute shadow-5-strong"></div>
 
                             <div class="card bg-glass">
-                                <div className="card-body px-4 py-5 px-md-5">
 
 
                                     <div className="row">
                                         <div>
-                                            <h3>Admin Login</h3>
+                                            <h3 style={{color: "#234168", marginLeft : -70}}>Admin Login</h3>
                                         </div>
 
                                         <div className="form-outline mb-4">
@@ -132,15 +131,17 @@ const Login = (props) => {
 
                                         </div>
 
-                                    </div>
-
-
-                                    <div className="form-outline mb-4">
+                                        <div className="form-outline mb-4">
                                         <input type="password" id="adminpassword" className="form-control"
                                             placeholder="Password" name="password" value={admin.password}
                                             onChange={(e) => adminform(e)}></input>
                                         {/* <input id="adminpassword"></input> */}
                                     </div>
+
+                                    </div>
+
+
+                                    
 
 
                                     {/* <div class="error">{{errorMessage}}</div> */}
@@ -148,8 +149,6 @@ const Login = (props) => {
                                         Log In
                                     </button>
 
-
-                                </div>
                             </div>
                         </div>
                     </div>

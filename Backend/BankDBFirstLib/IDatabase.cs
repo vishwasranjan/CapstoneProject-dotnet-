@@ -69,12 +69,17 @@ namespace BankDBFirstLib
         List<Cardapply> ShowCardApply();
 
 
-        bool checkAcc(int custId);
+        int CheckExistingUser(int custId);
+
+        void AddUserCredentials(user_login user_Login);
+
+        List<Cardapply> GetAllCardDeatils();
 
         bool changePassword(string currentPassword, string newPassword, int id);
 
 
         //aDMIN SIDE FUNCTIONS
+
         
 
 
