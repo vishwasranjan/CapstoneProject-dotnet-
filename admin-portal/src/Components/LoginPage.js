@@ -145,7 +145,7 @@ const Login = (props) => {
 
 
                                     {/* <div class="error">{{errorMessage}}</div> */}
-                                    <button className="btn btn-primary btn-block mb-4" onClick={loginAdmin}>
+                                    <button className="btn buttonlogin" onClick={loginAdmin}>
                                         Log In
                                     </button>
 
