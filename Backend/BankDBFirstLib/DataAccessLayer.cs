@@ -330,6 +330,20 @@ namespace BankDBFirstLib
             }
         }
 
+<<<<<<< HEAD
+        public bool changePassword(string currentPassword, string newPassword, int id)
+        {
+            var u = dbCtx.User_login.Where(o => o.CustomerId == id).SingleOrDefault();
+            string pswd = u.pswd;
+            if (currentPassword != pswd)
+                return false;
+            else
+            {
+                u.pswd = newPassword;
+                dbCtx.SaveChanges();
+                return true;
+            }
+=======
         public void AddUserCredentials(user_login user_Login)
         {
             dbCtx.Add(user_Login);
@@ -339,6 +353,7 @@ namespace BankDBFirstLib
         public List<Cardapply> GetAllCardDeatils()
         {
             return dbCtx.Cardapply.ToList();
+>>>>>>> cccddca903e83a03873c19dfb38c6e58659797f9
         }
     }
 }
