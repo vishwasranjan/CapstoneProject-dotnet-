@@ -336,8 +336,9 @@ namespace BankDBFirstLib
             dbCtx.SaveChanges();
         }
 
-
-
-
+        public List<Cardapply> GetAllCardDeatils()
+        {
+            return dbCtx.Cardapply.ToList();
+        }
     }
 }

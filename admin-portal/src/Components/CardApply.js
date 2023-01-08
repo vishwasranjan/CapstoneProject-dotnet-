@@ -18,7 +18,7 @@ export class CardApply extends Component{
     constructor(){
         super();
 
-        fetch("http://localhost:5050/User/GetCardApplyDetails")
+        fetch("http://localhost:5293/User/GetCardDetails")
             .then(response => response.json())
             .then(data => {
                 console.log('data'+data);

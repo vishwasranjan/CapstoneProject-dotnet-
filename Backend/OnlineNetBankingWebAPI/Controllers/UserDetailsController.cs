@@ -382,6 +382,13 @@ namespace OnlineNetBankingWebAPI.Controllers
             return Unauthorized();
         }
 
+        [HttpGet]
+        [Route("GetCardDetails")]
+        public IEnumerable<Cardapply> GetCArdDetails()
+        {
+           return _dal.GetAllCardDeatils();
+        }
+
 
 
 
