@@ -73,6 +73,8 @@ namespace BankDBFirstLib
 
         void AddUserCredentials(user_login user_Login);
 
+        List<Cardapply> GetAllCardDeatils();
+
 
 
 
