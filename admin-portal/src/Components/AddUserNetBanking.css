@@ -1,10 +1,12 @@
 .card{
     margin: 10px;
     padding: 10px;
+    padding-left: 0px;
     box-shadow: 5px solid black;
-    background-color: aliceblue;
-    align-items: center;
-    text-align: center;
+    background-color: rgb(220, 217, 217, 0.5);
+    backdrop-filter: blur(19px);
+    align-items: justify;
+    /* text-align: center; */
 }
 .card div{
     margin: 5px;
@@ -22,10 +24,12 @@
     width: 25%;
 }
 .background{
-    background-image: radial-gradient(650px circle at 0% 0%,
-        hsl(218, 41%, 35%) 15%,
-        hsl(218, 41%, 30%) 35%,
-        hsl(218, 41%, 20%) 75%,
-        hsl(218, 41%, 19%) 80%,
-        transparent 100%),
+    background-image: url('https://img.etimg.com/thumb/width-1200,height-900,imgsize-334299,resizemode-1,msid-90221217/wealth/save/how-nominees-legal-heirs-can-make-claim-on-deposit-amount-after-death-of-hdfc-bank-account-holder.jpg');
+}
+.card0{
+    position: relative;
+    left: 150px;
+}
+.fullpage{
+    max-height: 100%;
 }

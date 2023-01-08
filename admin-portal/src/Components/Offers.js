@@ -85,25 +85,20 @@ export class Offers extends Component {
     render() {
         return (
             <div class="loan-container">
-                <div className="button">
-                    <Link to="/dashboard-admin">
-                        <button className="btn"><i class="fa fa-close"></i></button>
-                    </Link>
-                </div>
                 <h3>Please Fill The Below Details To Avail Offers</h3>
                 <div className="add-offer-box">
                     <div className="heading">
-                        <h4> <i class="fa fa-gift" aria-hidden="true"></i>
-                            . Add Offer .<i class="fa fa-gift" aria-hidden="true"></i>
+                        <h4>
+                            Add Offers <i class="fa fa-gift" aria-hidden="true"></i>
                         </h4><hr />
                     </div>
                     <div className="row">
-                        <div className="col-md-1">Title</div>
+                        <div className="col-md-2">Title</div>
                         <div className="col-md-3"><input name="title" value={this.state.title} onChange={this.fHandler}></input></div>
                         <div className="col-md-1"><p>{this.state.err.title}</p></div>
                     </div>
 
-                    <div className="row offer-row">
+                    <div className="row">
                         <div className="col-md-2">Picture</div>
                         <div className="col-md-3"><input name="picture" value={this.state.picture} onChange={this.fHandler}></input></div>
                         <div className="col-md-1"><p>{this.state.err.picture}</p></div>
@@ -114,8 +109,18 @@ export class Offers extends Component {
                         <div className="col-md-1"><p>{this.state.err.descrip}</p></div>
                     </div>
                 </div>
+                <div className="row" style={{paddingLeft: 380}}>
+                    <div className="col-md-3">
+                    <div className="button-save"><button className="btn btn-primary" onClick={(e) => this.postOffers(e)}>Submit</button></div>
+                    </div>
+                    <div className="col-md-3">
+                    <Link to="/dashboard-admin">
+                        <div className="button-save"><button className="btn btn-primary">Back</button></div>
+                    </Link>
+                    </div>
+                </div>
 
-                <div className="button-save"><button className="btn btn-primary" onClick={(e) => this.postOffers(e)}>Submit</button></div>
+                
             </div>
         )
     }

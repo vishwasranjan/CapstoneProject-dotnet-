@@ -26,13 +26,17 @@
     color: black;
     font-weight: bold;
     padding: 3px;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    top: 5px;
+    left: 20px;
+    right: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
 }
-.loan-list div:hover{
-    background-color: #d0def1;
+.loan-list:hover{
+    font-size: large;
+    font-weight: bolder;
+    
+
 }
 /* .loant{
     position: absolute;

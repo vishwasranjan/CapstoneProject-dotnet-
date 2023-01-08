@@ -39,7 +39,7 @@ img
 }
 
 .logout{
-    text-align: right;
+    text-align: center;
 }
 .logout button{
     border-color: #213e65;
@@ -48,5 +48,5 @@ img
     margin-right: 5px; 
 }
 .logout button:hover{
-    color: red;
+    color: #30609f;
 }

@@ -19,13 +19,7 @@ export class Dashboard extends Component {
         return (
             // <Router>
             <div className="dashboard-container">
-                <div className="logout">
-                    <Link to="/">
-                            <button onClick={()=>{this.logout()}} className="btn">
-                            <i class="fa fa-home"></i> Logout</button>
-                    </Link>
-                </div>
-                    
+                                    
                 <div className="row">
                 <div className="col-md-3">
                     <ul className="list-group">
@@ -113,6 +107,12 @@ export class Dashboard extends Component {
   </div>
 
   </div>
+  <div className="logout">
+                    <Link to="/">
+                            <button onClick={()=>{this.logout()}} className="btn">
+                            <i class="fa fa-home"></i> Logout</button>
+                    </Link>
+                </div>
   {/* <marquee style={{ color: 'red', fontSize: '3em' }}>Test</marquee> */}
             </div>
             //   {/* </Router> */}
