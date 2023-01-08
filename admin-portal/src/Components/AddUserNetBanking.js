@@ -67,8 +67,9 @@ export class AddUserNetBanking extends Component{
     
     render(){
         return (
-          <section className="background">
+          
             <div className="fullpage">
+              <section className="background">
               <div id="Addform">
                 <div class="card0 col-12 col-md-9 col-lg-7 col-xl-6">
                 <div className="card col-md-10">
@@ -121,8 +122,9 @@ export class AddUserNetBanking extends Component{
                 </div>
                 
               </div>
+              </section>
             </div>
-          </section>
+          
         );
     }
 }

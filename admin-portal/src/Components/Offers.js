@@ -115,7 +115,7 @@ export class Offers extends Component {
                     </div>
                     <div className="col-md-3">
                     <Link to="/dashboard-admin">
-                        <div className="button-save"><button className="btn btn-primary">Back</button></div>
+                        <div className="button-save"><button className="btn btn-danger">Cancel</button></div>
                     </Link>
                     </div>
                 </div>
