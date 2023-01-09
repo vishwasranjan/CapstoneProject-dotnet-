@@ -75,7 +75,7 @@ namespace BankDBFirstLib
 
         List<Cardapply> GetAllCardDeatils();
 
-
+        bool changePassword(string currentPassword, string newPassword, int id);
 
 
         //aDMIN SIDE FUNCTIONS

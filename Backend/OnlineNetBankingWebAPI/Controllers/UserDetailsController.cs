@@ -335,6 +335,14 @@ namespace OnlineNetBankingWebAPI.Controllers
             return _dal.ApprovedLoans();
         }
 
+        [HttpPost]
+        [Route("changePassword")]
+        public bool changePassword(string currentPassword, string newPassword, int id)
+        {
+            return _dal.changePassword(currentPassword, newPassword, id);
+        }
+
+
         [HttpGet]
         [Route("CheckExistingUser")]
         public int CheckExistingUser(int custid)
@@ -388,6 +396,7 @@ namespace OnlineNetBankingWebAPI.Controllers
         {
            return _dal.GetAllCardDeatils();
         }
+
 
 
 

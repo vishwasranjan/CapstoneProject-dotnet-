@@ -24,7 +24,7 @@ namespace BankDBFirstLib
 
         public string? ITdocument1 { get; set; }
         public string ? ITdocument2 { get; set; }
-        public string BSdocument { get; set; }
+        public string? BSdocument { get; set; }
 
         public virtual userDetail? Customer { get; set; }
     }
