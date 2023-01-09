@@ -38,6 +38,11 @@
     background-color: hsla(0, 0%, 100%, 0.9) !important;
     backdrop-filter: saturate(200%) blur(25px);
   }
+  .buttonlogin{
+    background-color: #81afec;
+    width: 200px;
+    align-self: center;
+  }
   /* h1{
     color: hsl(218, 81%, 95%);
   }

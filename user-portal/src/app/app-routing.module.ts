@@ -22,16 +22,9 @@ import { ChatComponent } from './Component/chat/chat.component';
 import { ChatbotModelComponent } from './Component/chatbot-model/chatbot-model.component';
 import { EmailServiceComponent } from './Component/email-service/email-service.component';
 import { TransferToPayeeComponent } from './Component/transfer-to-payee/transfer-to-payee.component';
-import { AboutUsComponent } from './Component/about-us/about-us.component';
-import { HelpComponent } from './Component/help/help.component';
-import { FeedbackFormComponent } from './Component/feedback-form/feedback-form.component';
-import { ChequebookRequestComponent } from './Component/chequebook-request/chequebook-request.component';
 import { HomeLoanComponent } from './Component/home-loan/home-loan.component';
-import { ProceedComponent } from './Component/proceed/proceed.component';
+import { ChangePasswordComponent } from './Component/change-password/change-password.component';
 import { IncomeTaxReturnComponent } from './Component/income-tax-return/income-tax-return.component';
-import { ProceedInbetweenComponent } from './Component/proceed-inbetween/proceed-inbetween.component';
-import { BankStatementComponent } from './Component/bank-statement/bank-statement.component';
-import { ProfileReadyComponent } from './Component/profile-ready/profile-ready.component';
 const routes: Routes=[
    
   {
@@ -93,7 +86,7 @@ const routes: Routes=[
   },
 
   {
-    path:'hl-applynow', component: HlApplynowComponent,
+    path:'hl', component: HlApplynowComponent,
     canActivate: [AuthGuardGuard]
   },
   {
@@ -101,50 +94,40 @@ const routes: Routes=[
     canActivate: [AuthGuardGuard]
   },
   {
-    path: 'navbar', component: NavbarComponent
+    path: 'navbar', component: NavbarComponent,
+    canActivate: [AuthGuardGuard]
   },
   {
-    path:'chat', component: ChatComponent
+    path:'chat', component: ChatComponent,
+    canActivate: [AuthGuardGuard]
   },
   {
-    path:'chatbot-model', component: ChatbotModelComponent
+    path:'chatbot-model', component: ChatbotModelComponent,
+    canActivate: [AuthGuardGuard]
   },
   {
     path:'email-service', component: EmailServiceComponent
   },
   {
-    path: 'transfer-to-payee', component: TransferToPayeeComponent
+    path: 'transfer-to-payee', component: TransferToPayeeComponent,
+    canActivate: [AuthGuardGuard]
   },
   {
-    path:'help', component: HelpComponent
-  },
-  {
-    path:'about-us', component:AboutUsComponent
-  },
-  {
-    path:'feedback-form', component: FeedbackFormComponent
-  },
-  {
-    path:'chequebook-request', component: ChequebookRequestComponent
-  },
-  {
-    path:'home-loan', component: HomeLoanComponent
-  },
-  {
-    path: 'proceed', component: ProceedComponent
-  },
-  {
-    path:'income-tax-return', component: IncomeTaxReturnComponent
-  },
-  {
-    path:'proceed-inbetween', component: ProceedInbetweenComponent
-  },
-  {
-    path:'bank-statement', component: BankStatementComponent
-  },
-  {
-    path:'profile-ready', component: ProfileReadyComponent
-  }
+
+    path:'home-loan', component: HomeLoanComponent, //home loan
+    canActivate: [AuthGuardGuard]
+
+   },
+   {
+    path: 'changePassword', component: ChangePasswordComponent,
+    canActivate: [AuthGuardGuard]
+   },
+   {
+    path: 'itr', component: IncomeTaxReturnComponent,
+    canActivate: [AuthGuardGuard]
+   }
+
+ 
 ]
 
 

@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./AddUserNetBanking.css"
 export class AddUserNetBanking extends Component{
     state={
-        "customerId": 0,
-        "userName": "abc",
-        "pswd": "abc",
+        "customerId": "",
+        "userName": "",
+        "pswd": "",
+        
         
     }
 
@@ -69,8 +71,17 @@ export class AddUserNetBanking extends Component{
         return (
           
             <div className="fullpage">
+              <div className="button">
+                    <Link to="/dashboard-admin">
+                        <button className="btn"><i class="fa fa-close"></i></button>
+                    </Link>
+                </div>
+              <div className="admin-add-user">
+                  <img src="https://tse2.mm.bing.net/th/id/OIP.BNMx7U4GqzJpps6_Pe0awQHaHa?w=204&h=203&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                </div>
               <section className="background">
               <div id="Addform">
+                
                 <div class="card0 col-12 col-md-9 col-lg-7 col-xl-6">
                 <div className="card col-md-10">
                   <div className="row">

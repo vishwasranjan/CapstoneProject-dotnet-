@@ -89,7 +89,7 @@ export class Offers extends Component {
                 <div className="add-offer-box">
                     <div className="heading">
                         <h4>
-                            Add Offers <i class="fa fa-gift" aria-hidden="true"></i>
+                            Add Offers 
                         </h4><hr />
                     </div>
                     <div className="row">

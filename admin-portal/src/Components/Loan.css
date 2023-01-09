@@ -38,6 +38,13 @@
     
 
 }
+.offer-list div{
+    padding: 2px;
+}
+.offer-list:hover{
+    font-size: large;
+    font-weight: bolder;
+}
 /* .loant{
     position: absolute;
     left: 50px;
