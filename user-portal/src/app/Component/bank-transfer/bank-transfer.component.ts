@@ -52,7 +52,7 @@ export class BankTransferComponent implements OnInit {
     else
     return false;
   }
-
+f = false;
   submit(bankTransfer:BankTransfer, ){
     
       // this.c='/username-password'
@@ -60,6 +60,17 @@ export class BankTransferComponent implements OnInit {
       console.log(bankTransfer);
       console.log(this.user.value.id);
       
+      this.userService.getAccount(bankTransfer.accountNumber).subscribe(data=>{
+        if(data!=null)
+        {
+        this.f = true;
+        }
+      });
+      if(this.f==false)
+      {
+        this.errmsg = "account does not exist";
+      return;
+      }
       this.userService.tDebit(bankTransfer.amount, this.user.value.id).subscribe(res=>{
         if(res==true)
         {

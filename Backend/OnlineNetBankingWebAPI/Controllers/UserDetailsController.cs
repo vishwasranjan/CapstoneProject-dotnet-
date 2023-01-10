@@ -334,14 +334,6 @@ namespace OnlineNetBankingWebAPI.Controllers
         {
             return _dal.ApprovedLoans();
         }
-<<<<<<< HEAD
-        [HttpPost]
-        [Route("changePassword")]
-        public bool changePassword(string currentPassword, string newPassword, int id)
-        {
-            return _dal.changePassword(currentPassword, newPassword, id);
-        }
-=======
 
         [HttpPost]
         [Route("changePassword")]
@@ -349,6 +341,14 @@ namespace OnlineNetBankingWebAPI.Controllers
         {
             return _dal.changePassword(currentPassword, newPassword, id);
         }
+
+
+        //[HttpPost]
+        //[Route("changePassword")]
+        //public bool changePassword(string currentPassword, string newPassword, int id)
+        //{
+        //    return _dal.changePassword(currentPassword, newPassword, id);
+        //}
 
 
         [HttpGet]
@@ -406,7 +406,6 @@ namespace OnlineNetBankingWebAPI.Controllers
         }
 
 
->>>>>>> cccddca903e83a03873c19dfb38c6e58659797f9
 
 
 
